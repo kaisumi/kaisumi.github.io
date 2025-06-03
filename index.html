@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最新AIニュース (ITエンジニア向け)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Tailwind gray-100 */
+        }
+        .news-card {
+            background-color: white;
+            border-radius: 0.5rem; /* Tailwind rounded-lg */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Tailwind shadow-md */
+            transition: transform 0.2s ease-in-out;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+        .loading-spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left-color: #4f46e5; /* Tailwind indigo-600 */
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .error-message {
+            background-color: #fee2e2; /* Tailwind red-100 */
+            color: #b91c1c; /* Tailwind red-700 */
+            padding: 1rem;
+            border-radius: 0.375rem; /* Tailwind rounded-md */
+            border: 1px solid #fecaca; /* Tailwind red-200 */
+        }
+        .source-tag {
+            background-color: #e0e7ff; /* Tailwind indigo-100 */
+            color: #4338ca; /* Tailwind indigo-700 */
+            font-size: 0.75rem; /* Tailwind text-xs */
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem; /* Tailwind rounded-sm */
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
+    <div class="container mx-auto max-w-3xl w-full">
+        <header class="mb-8 text-center">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-800">AIニュースダッシュボード</h1>
+            <p class="text-gray-600 mt-2">ITエンジニア向け・過去1週間の注目AIニュース</p>
+        </header>
+
+        <div class="text-center mb-6">
+            <button id="fetchNewsButton" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 inline-block mr-2 align-middle">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+                </svg>
+                最新ニュースを取得
+            </button>
+        </div>
+
+        <div id="loadingIndicator" class="hidden flex justify-center items-center my-8">
+            <div class="loading-spinner"></div>
+            <p class="ml-3 text-gray-600">ニュースを取得中...</p>
+        </div>
+
+        <div id="errorMessage" class="hidden error-message my-6"></div>
+
+        <div id="newsContainer" class="space-y-6">
+            </div>
+
+        <footer class="mt-12 text-center text-sm text-gray-500">
+            <p>&copy; <span id="currentYear"></span> AI News Aggregator. All rights reserved.</p>
+            <p class="mt-1">Powered by Gemini API</p>
+        </footer>
+    </div>
+
+    <script>
+        // DOM要素の取得
+        const fetchNewsButton = document.getElementById('fetchNewsButton');
+        const newsContainer = document.getElementById('newsContainer');
+        const loadingIndicator = document.getElementById('loadingIndicator');
+        const errorMessageContainer = document.getElementById('errorMessage');
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // ニュース取得ボタンのイベントリスナー
+        fetchNewsButton.addEventListener('click', fetchAiNews);
+
+        /**
+         * Gemini APIを呼び出してAIニュースを取得し、表示する関数
+         */
+        async function fetchAiNews() {
+            // UIを初期状態にリセット
+            newsContainer.innerHTML = ''; // 既存のニュースをクリア
+            loadingIndicator.classList.remove('hidden'); // ローディング表示
+            errorMessageContainer.classList.add('hidden'); // エラーメッセージ非表示
+            fetchNewsButton.disabled = true; // ボタンを無効化
+
+            // Gemini APIへのプロンプト
+            const prompt = `ITエンジニア向けに、過去1週間で最も重要と思われるAI関連のニュースを5件挙げてください。
+各ニュースについて、以下の情報を提供してください。
+1. タイトル (簡潔で分かりやすいもの)
+2. 短い要約 (2-3文程度)
+3. 主要な情報源のドメイン名 (例: techcrunch.com, openai.comなど)
+4. 可能であれば、そのニュースが発表されたおおよその日付 (YYYY-MM-DD形式)
+
+フォーマット例:
+タイトル: [ニュースタイトル]
+要約: [ニュースの要約]
+情報源: [ドメイン名]
+日付: [YYYY-MM-DD]
+
+--- (各ニュースの区切り)
+
+上記形式で5件お願いします。`;
+
+            let chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
+            const payload = { contents: chatHistory };
+            const apiKey = ""; // Gemini APIキー (Canvas環境では自動的に提供される想定)
+            // 修正点: バッククォート前の不要なバックスラッシュを削除
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    console.error('API Error:', errorData);
+                    throw new Error(`APIリクエストに失敗しました。ステータス: ${response.status}`);
+                }
+
+                const result = await response.json();
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const rawNewsText = result.candidates[0].content.parts[0].text;
+                    displayNews(rawNewsText);
+                } else {
+                    console.error('Unexpected API response structure:', result);
+                    throw new Error('ニュースデータの取得に失敗しました。APIからの応答形式が正しくありません。');
+                }
+
+            } catch (error) {
+                console.error('Fetch error:', error);
+                showError(`ニュースの取得中にエラーが発生しました: ${error.message}`);
+            } finally {
+                loadingIndicator.classList.add('hidden'); // ローディング非表示
+                fetchNewsButton.disabled = false; // ボタンを有効化
+            }
+        }
+
+        /**
+         * APIから取得したテキストを解析し、ニュース記事として表示する関数
+         * @param {string} rawNewsText - APIからの生のニューステキスト
+         */
+        function displayNews(rawNewsText) {
+            newsContainer.innerHTML = ''; // 念のためクリア
+            const newsItems = rawNewsText.split('---').map(item => item.trim()).filter(item => item);
+
+            if (newsItems.length === 0 && rawNewsText.trim()) {
+                // --- で分割できなかったが、何かしらのテキストはある場合 (単一記事の可能性)
+                newsItems.push(rawNewsText.trim());
+            }
+
+
+            if (newsItems.length === 0) {
+                showError('ニュースが見つかりませんでした。後ほど再試行してください。');
+                return;
+            }
+
+            newsItems.forEach(itemText => {
+                const newsData = parseNewsItem(itemText);
+                if (newsData.title) { // タイトルがある場合のみ表示
+                    const newsCard = document.createElement('div');
+                    newsCard.className = 'news-card p-6';
+
+                    let contentHtml = `<h2 class="text-xl font-semibold text-indigo-700 mb-2">${newsData.title}</h2>`;
+                    if (newsData.summary) {
+                        contentHtml += `<p class="text-gray-700 mb-3 text-sm leading-relaxed">${newsData.summary}</p>`;
+                    }
+                    if (newsData.date) {
+                        contentHtml += `<p class="text-xs text-gray-500 mb-1">日付: ${newsData.date}</p>`;
+                    }
+                    if (newsData.source) {
+                        contentHtml += `<span class="source-tag">${newsData.source}</span>`;
+                    }
+                    
+                    // 記事への直接リンクがないため、情報源を検索するリンクを生成
+                    if (newsData.source && newsData.title) {
+                         contentHtml += `<a href="https://www.google.com/search?q=${encodeURIComponent(newsData.title + " " + newsData.source)}" target="_blank" rel="noopener noreferrer" class="block text-indigo-600 hover:text-indigo-800 text-sm mt-3 font-medium">情報源で検索 <span aria-hidden="true">&rarr;</span></a>`;
+                    }
+
+
+                    newsCard.innerHTML = contentHtml;
+                    newsContainer.appendChild(newsCard);
+                }
+            });
+        }
+
+        /**
+         * 個々のニュースアイテムテキストを解析してオブジェクトに変換する関数
+         * @param {string} itemText - 個々のニュースアイテムのテキスト
+         * @returns {object} - {title, summary, source, date}
+         */
+        function parseNewsItem(itemText) {
+            // 修正点: itemText.split('\\n') を itemText.split('\n') に変更
+            const lines = itemText.split('\n').map(line => line.trim()).filter(line => line);
+            const newsData = { title: '', summary: '', source: '', date: '' };
+
+            let currentKey = null;
+            let summaryLines = [];
+
+            lines.forEach(line => {
+                if (line.toLowerCase().startsWith('タイトル:')) {
+                    newsData.title = line.substring('タイトル:'.length).trim();
+                    currentKey = 'title';
+                } else if (line.toLowerCase().startsWith('要約:')) {
+                    summaryLines.push(line.substring('要約:'.length).trim());
+                    currentKey = 'summary';
+                } else if (line.toLowerCase().startsWith('情報源:')) {
+                    newsData.source = line.substring('情報源:'.length).trim();
+                    currentKey = 'source';
+                } else if (line.toLowerCase().startsWith('日付:')) {
+                    newsData.date = line.substring('日付:'.length).trim();
+                    currentKey = 'date';
+                } else if (currentKey === 'summary') { // 要約が複数行にまたがる場合
+                    summaryLines.push(line);
+                } else if (!newsData.title && !newsData.summary && !newsData.source && !newsData.date) {
+                    // まだ何も解析できていない場合、最初の行をタイトルとみなす（フォールバック）
+                     if (!newsData.title) newsData.title = line;
+                }
+            });
+            newsData.summary = summaryLines.join(' ');
+
+            // フォールバック: もし上記のキーワードが見つからなければ、最初の数行をタイトルと要約に割り当てる試み
+            if (!newsData.title && lines.length > 0) {
+                newsData.title = lines[0];
+                if (lines.length > 1) {
+                    newsData.summary = lines.slice(1).join(' ');
+                }
+            }
+            
+            return newsData;
+        }
+
+
+        /**
+         * エラーメッセージを表示する関数
+         * @param {string} message - 表示するエラーメッセージ
+         */
+        function showError(message) {
+            errorMessageContainer.textContent = message;
+            errorMessageContainer.classList.remove('hidden');
+        }
+
+        // 初期表示として、ページ読み込み時にニュースを自動取得する (任意)
+        // fetchAiNews(); // 必要に応じてコメントアウトまたは削除
+    </script>
+</body>
+</html>
