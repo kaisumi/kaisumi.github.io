@@ -1,0 +1,11 @@
+{
+  "items": [
+    {
+      "title": "GitHub Actionsでのデモデータ",
+      "summary": "これは初期データです。GitHub Actionsが実行されると、実際のAIニュースに置き換えられます。",
+      "source": "github.com",
+      "date": "2023-05-01"
+    }
+  ],
+  "lastUpdated": "2023-05-01T00:00:00.000Z"
+}

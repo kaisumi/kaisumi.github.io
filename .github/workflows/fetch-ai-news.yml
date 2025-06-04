@@ -1,0 +1,175 @@
+name: Fetch AI News
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 毎日UTC 0:00（日本時間9:00）に実行
+  workflow_dispatch:  # 手動実行も可能
+
+jobs:
+  fetch-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Create news fetcher script
+        run: |
+          cat > fetch-news.js << 'EOL'
+          const fs = require('fs');
+          const path = require('path');
+          const https = require('https');
+
+          // Gemini APIへのプロンプト
+          const prompt = `ITエンジニア向けに、過去1週間で最も重要と思われるAI関連のニュースを5件挙げてください。
+          各ニュースについて、以下の情報を提供してください。
+          1. タイトル (簡潔で分かりやすいもの)
+          2. 短い要約 (2-3文程度)
+          3. 主要な情報源のドメイン名 (例: techcrunch.com, openai.comなど)
+          4. 可能であれば、そのニュースが発表されたおおよその日付 (YYYY-MM-DD形式)
+
+          フォーマット例:
+          タイトル: [ニュースタイトル]
+          要約: [ニュースの要約]
+          情報源: [ドメイン名]
+          日付: [YYYY-MM-DD]
+
+          --- (各ニュースの区切り)
+
+          上記形式で5件お願いします。`;
+
+          const chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
+          const payload = { contents: chatHistory };
+          const apiKey = process.env.GEMINI_API_KEY;
+          const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+          // APIリクエスト関数
+          function makeRequest() {
+            return new Promise((resolve, reject) => {
+              const options = {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                }
+              };
+
+              const req = https.request(apiUrl, options, (res) => {
+                let data = '';
+                res.on('data', (chunk) => {
+                  data += chunk;
+                });
+                res.on('end', () => {
+                  if (res.statusCode >= 200 && res.statusCode < 300) {
+                    resolve(JSON.parse(data));
+                  } else {
+                    reject(new Error(`API request failed with status code ${res.statusCode}: ${data}`));
+                  }
+                });
+              });
+
+              req.on('error', (error) => {
+                reject(error);
+              });
+
+              req.write(JSON.stringify(payload));
+              req.end();
+            });
+          }
+
+          // ニュースデータを解析する関数
+          function parseNewsItems(rawText) {
+            const newsItems = rawText.split('---').map(item => item.trim()).filter(item => item);
+            const parsedItems = [];
+
+            for (const itemText of newsItems) {
+              const lines = itemText.split('\n').map(line => line.trim()).filter(line => line);
+              const newsData = { title: '', summary: '', source: '', date: '' };
+              let currentKey = null;
+              let summaryLines = [];
+
+              for (const line of lines) {
+                if (line.toLowerCase().startsWith('タイトル:')) {
+                  newsData.title = line.substring('タイトル:'.length).trim();
+                  currentKey = 'title';
+                } else if (line.toLowerCase().startsWith('要約:')) {
+                  summaryLines.push(line.substring('要約:'.length).trim());
+                  currentKey = 'summary';
+                } else if (line.toLowerCase().startsWith('情報源:')) {
+                  newsData.source = line.substring('情報源:'.length).trim();
+                  currentKey = 'source';
+                } else if (line.toLowerCase().startsWith('日付:')) {
+                  newsData.date = line.substring('日付:'.length).trim();
+                  currentKey = 'date';
+                } else if (currentKey === 'summary') {
+                  summaryLines.push(line);
+                } else if (!newsData.title && !newsData.summary && !newsData.source && !newsData.date) {
+                  if (!newsData.title) newsData.title = line;
+                }
+              }
+              
+              newsData.summary = summaryLines.join(' ');
+              
+              // フォールバック処理
+              if (!newsData.title && lines.length > 0) {
+                newsData.title = lines[0];
+                if (lines.length > 1) {
+                  newsData.summary = lines.slice(1).join(' ');
+                }
+              }
+              
+              if (newsData.title) {
+                parsedItems.push(newsData);
+              }
+            }
+            
+            return parsedItems;
+          }
+
+          // メイン処理
+          async function main() {
+            try {
+              console.log('Fetching AI news from Gemini API...');
+              const result = await makeRequest();
+              
+              if (result.candidates && result.candidates.length > 0 &&
+                  result.candidates[0].content && result.candidates[0].content.parts &&
+                  result.candidates[0].content.parts.length > 0) {
+                
+                const rawNewsText = result.candidates[0].content.parts[0].text;
+                const newsItems = parseNewsItems(rawNewsText);
+                
+                // 結果をJSONファイルとして保存
+                const outputData = {
+                  items: newsItems,
+                  lastUpdated: new Date().toISOString()
+                };
+                
+                fs.writeFileSync('ai-news.json', JSON.stringify(outputData, null, 2));
+                console.log(`Successfully fetched and saved ${newsItems.length} news items.`);
+              } else {
+                throw new Error('Unexpected API response structure');
+              }
+            } catch (error) {
+              console.error('Error fetching news:', error);
+              process.exit(1);
+            }
+          }
+
+          main();
+          EOL
+
+      - name: Fetch AI news
+        run: node fetch-news.js
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add ai-news.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update AI news data" && git push)
