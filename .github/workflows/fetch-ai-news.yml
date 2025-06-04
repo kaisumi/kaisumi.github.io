@@ -244,7 +244,6 @@ jobs:
               }
               
               newsData.summary = summaryLines.join(' ');
-              
               // フォールバック処理
               if (!newsData.title && lines.length > 0) {
                 newsData.title = sanitizeString(lines[0]);
@@ -336,11 +335,15 @@ jobs:
                 }
               }
               
-              // タイトルが存在し、かつ最低限の長さがある場合のみ追加
-              if (newsData.title && newsData.title.length >= 3) {
+              // タイトル・要約・情報源の妥当性を確認
+              const hasValidSource = (newsData.url && isValidUrl(newsData.url)) ||
+                                     (newsData.source && isValidDomain(newsData.source));
+              if (newsData.title && newsData.title.length >= 3 &&
+                  newsData.summary && newsData.summary.length > 0 &&
+                  hasValidSource) {
                 parsedItems.push(newsData);
               } else {
-                console.log(`Skipping news item with invalid title: "${newsData.title}"`);
+                console.log(`Skipping news item with insufficient data: "${newsData.title}"`);
               }
             }
             
