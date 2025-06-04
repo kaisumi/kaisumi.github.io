@@ -67,7 +67,14 @@ jobs:
           上記形式で20件お願いします。古いニュース（${oneMonthAgoStr}より前）は含めないでください。
           必ず最新のニュースから順番に並べてください。
           
-          重要: 各ニュースには必ず完全なURLを含めてください。URLは実際に存在する記事へのリンクであることが望ましいですが、ドメイン名のホームページ（例：https://openai.com）でも構いません。`;
+          重要な注意事項:
+          1. 各ニュースには必ず完全なURLを含めてください。
+          2. URLは実際に存在する記事へのリンクを提供してください。
+          3. 架空のURLや存在しない記事へのリンクは避けてください。
+          4. 記事の具体的なURLが不明な場合は、その情報源の公式サイトのトップページURL（例：https://openai.com）を使用してください。
+          5. 「仮のドメイン」や存在しないドメインは使用しないでください。
+          6. 有名なニュースサイト（TechCrunch, The Verge, Wired, VentureBeat, MIT Technology Review, CNBC, Bloomberg, Reutersなど）や
+             企業の公式サイト（openai.com, google.com, microsoft.com, meta.comなど）を情報源として使用してください。`;
 
           const chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
           const payload = { contents: chatHistory };
@@ -149,7 +156,31 @@ jobs:
             if (!url) return false;
             try {
               const parsedUrl = new URL(url);
-              return ['http:', 'https:'].includes(parsedUrl.protocol);
+              // プロトコルが http または https であることを確認
+              if (!['http:', 'https:'].includes(parsedUrl.protocol)) {
+                return false;
+              }
+              
+              // 明らかに架空のドメインや仮のドメインを除外
+              const fakeDomains = [
+                'example.com', 'test.com', 'domain.com', 'website.com', 
+                'ai-ethics.org', 'trucking.com', 'edtech.com', 'pharma.com', 
+                'security.com', 'ai-art.com', 'climate.gov', 'smartcity.com',
+                'ai-news.com', 'tech-news.com', 'ai-research.com'
+              ];
+              
+              // ドメイン名が架空のドメインリストに含まれているかチェック
+              if (fakeDomains.some(domain => parsedUrl.hostname === domain || 
+                                            parsedUrl.hostname.endsWith('.' + domain))) {
+                return false;
+              }
+              
+              // 「仮のドメイン」という文字列を含むURLを除外
+              if (url.includes('仮のドメイン')) {
+                return false;
+              }
+              
+              return true;
             } catch (e) {
               return false;
             }
@@ -181,7 +212,7 @@ jobs:
 
             for (const itemText of newsItems) {
               const lines = itemText.split('\n').map(line => line.trim()).filter(line => line);
-              const newsData = { title: '', summary: '', source: '', url: '', date: '' };
+              const newsData = { title: '', summary: '', source: '', url: '', date: '', domain: '' };
               let currentKey = null;
               let summaryLines = [];
 
@@ -247,15 +278,62 @@ jobs:
               // URLの検証と処理
               if (newsData.url) {
                 if (!isValidUrl(newsData.url)) {
-                  console.log(`Invalid URL found: ${newsData.url}, removing it`);
+                  console.log(`Invalid URL found: ${newsData.url}, will try to replace with domain homepage`);
                   newsData.url = '';
+                } else {
+                  // URLが有効な場合でも、パスが存在するかどうかは確認できないため、
+                  // ドメイン名を抽出して保存しておく
+                  try {
+                    const parsedUrl = new URL(newsData.url);
+                    newsData.domain = parsedUrl.hostname;
+                  } catch (e) {
+                    // パースに失敗した場合は何もしない
+                  }
                 }
               }
               
-              // URLが提供されていない場合は、sourceからURLを構築（ドメイン名が有効な場合のみ）
-              if (!newsData.url && newsData.source && isValidDomain(newsData.source)) {
-                newsData.url = `https://${newsData.source}`;
-                console.log(`URL not provided for "${newsData.title}", generated: ${newsData.url}`);
+              // URLが提供されていない場合は、sourceからURLを構築
+              if (!newsData.url) {
+                // まず、sourceが有効なドメイン名かチェック
+                if (newsData.source && isValidDomain(newsData.source)) {
+                  newsData.url = `https://${newsData.source}`;
+                  console.log(`URL not provided for "${newsData.title}", generated from source: ${newsData.url}`);
+                } 
+                // sourceが無効な場合でも、domainが抽出されていれば使用
+                else if (newsData.domain) {
+                  newsData.url = `https://${newsData.domain}`;
+                  console.log(`Invalid URL for "${newsData.title}", using domain homepage instead: ${newsData.url}`);
+                  // sourceも更新
+                  newsData.source = newsData.domain;
+                }
+                // それでもURLが生成できない場合は、有名なAI関連サイトのURLを使用
+                else {
+                  const fallbackDomains = [
+                    'techcrunch.com', 'theverge.com', 'wired.com', 'venturebeat.com', 
+                    'technologyreview.com', 'cnbc.com', 'bloomberg.com', 'reuters.com',
+                    'openai.com', 'google.com', 'microsoft.com', 'meta.com', 'nvidia.com'
+                  ];
+                  
+                  // ニュースのタイトルや要約に基づいて、最も関連性の高いドメインを選択
+                  let selectedDomain = fallbackDomains[0]; // デフォルト
+                  const content = (newsData.title + ' ' + newsData.summary).toLowerCase();
+                  
+                  if (content.includes('openai') || content.includes('gpt')) {
+                    selectedDomain = 'openai.com';
+                  } else if (content.includes('google') || content.includes('gemini')) {
+                    selectedDomain = 'google.com';
+                  } else if (content.includes('microsoft') || content.includes('azure')) {
+                    selectedDomain = 'microsoft.com';
+                  } else if (content.includes('meta') || content.includes('facebook')) {
+                    selectedDomain = 'meta.com';
+                  } else if (content.includes('nvidia')) {
+                    selectedDomain = 'nvidia.com';
+                  }
+                  
+                  newsData.url = `https://${selectedDomain}`;
+                  newsData.source = selectedDomain;
+                  console.log(`No valid URL or domain for "${newsData.title}", using fallback: ${newsData.url}`);
+                }
               }
               
               // タイトルが存在し、かつ最低限の長さがある場合のみ追加
