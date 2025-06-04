@@ -210,13 +210,14 @@
 
                                 // 情報源へのリンク表示(リンクがある場合のみ)
                                 if (targetUrl) {
-                                    contentHtml += `<div class="text-indigo-600 text-sm mt-3 font-medium">情報源を開く <span aria-hidden="true">&rarr;</span></div>`;
+                                    contentHtml += `<a href="${escapeHtml(targetUrl)}" target="_blank" rel="noopener noreferrer" class="text-indigo-600 text-sm mt-3 font-medium">情報源を開く <span aria-hidden="true">&rarr;</span></a>`;
                                 }
 
                                 newsCard.innerHTML = contentHtml;
 
                                 if (targetUrl) {
-                                    newsCard.addEventListener('click', () => {
+                                    newsCard.addEventListener('click', (e) => {
+                                        if (e.target.closest('a')) return; // リンククリック時はカードの処理をスキップ
                                         window.open(targetUrl, '_blank', 'noopener,noreferrer');
                                     });
                                     newsCard.style.cursor = 'pointer'; // クリック可能なことを示す
