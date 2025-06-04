@@ -72,19 +72,23 @@ jobs:
           const chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
           const payload = { contents: chatHistory };
           const apiKey = process.env.GEMINI_API_KEY;
-          const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+          // apiUrlは削除 - 代わりにmakeRequest関数内でapiBaseUrlを使用
 
           // APIリクエスト関数
           function makeRequest() {
             return new Promise((resolve, reject) => {
+              // APIキーをURLパラメータではなくヘッダーで送信するように変更
+              const apiBaseUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
+              
               const options = {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
+                  'x-goog-api-key': apiKey // APIキーをヘッダーに設定
                 }
               };
 
-              const req = https.request(apiUrl, options, (res) => {
+              const req = https.request(apiBaseUrl, options, (res) => {
                 let data = '';
                 res.on('data', (chunk) => {
                   data += chunk;
@@ -100,14 +104,16 @@ jobs:
                     }
                   } else {
                     console.error(`API request failed with status code ${res.statusCode}`);
-                    reject(new Error(`API request failed with status code ${res.statusCode}: ${data}`));
+                    // APIキーが含まれる可能性のあるデータをログに出力しないように注意
+                    reject(new Error(`API request failed with status code ${res.statusCode}`));
                   }
                 });
               });
 
               req.on('error', (error) => {
                 console.error('Network error during API request:', error);
-                reject(error);
+                // エラーメッセージにAPIキーが含まれないように注意
+                reject(new Error('Network error during API request'));
               });
 
               // タイムアウト設定
@@ -119,6 +125,46 @@ jobs:
               req.write(JSON.stringify(payload));
               req.end();
             });
+          }
+
+          /**
+           * 文字列をサニタイズする関数
+           * @param {string} str - サニタイズする文字列
+           * @return {string} サニタイズされた文字列
+           */
+          function sanitizeString(str) {
+            if (!str) return '';
+            // 基本的なサニタイズ - 制御文字や特殊文字を削除
+            return String(str)
+              .replace(/[^\x20-\x7E\u3000-\u30FF\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/g, '') // 制御文字と一部の特殊文字を削除
+              .trim();
+          }
+
+          /**
+           * URLが有効かどうかを検証する関数
+           * @param {string} url - 検証するURL
+           * @return {boolean} URLが有効な場合はtrue、そうでない場合はfalse
+           */
+          function isValidUrl(url) {
+            if (!url) return false;
+            try {
+              const parsedUrl = new URL(url);
+              return ['http:', 'https:'].includes(parsedUrl.protocol);
+            } catch (e) {
+              return false;
+            }
+          }
+
+          /**
+           * ドメイン名が有効かどうかを検証する関数
+           * @param {string} domain - 検証するドメイン名
+           * @return {boolean} ドメイン名が有効な場合はtrue、そうでない場合はfalse
+           */
+          function isValidDomain(domain) {
+            if (!domain) return false;
+            // 基本的なドメイン名の検証（英数字、ハイフン、ドット）
+            const domainRegex = /^[a-zA-Z0-9]([a-zA-Z0-9\-\.]+)?\.[a-zA-Z]{2,}$/;
+            return domainRegex.test(domain);
           }
 
           // ニュースデータを解析する関数
@@ -141,24 +187,28 @@ jobs:
 
               for (const line of lines) {
                 if (line.toLowerCase().startsWith('タイトル:')) {
-                  newsData.title = line.substring('タイトル:'.length).trim();
+                  newsData.title = sanitizeString(line.substring('タイトル:'.length).trim());
                   currentKey = 'title';
                 } else if (line.toLowerCase().startsWith('要約:')) {
-                  summaryLines.push(line.substring('要約:'.length).trim());
+                  summaryLines.push(sanitizeString(line.substring('要約:'.length).trim()));
                   currentKey = 'summary';
                 } else if (line.toLowerCase().startsWith('情報源:')) {
-                  newsData.source = line.substring('情報源:'.length).trim();
+                  newsData.source = sanitizeString(line.substring('情報源:'.length).trim());
                   currentKey = 'source';
                 } else if (line.toLowerCase().startsWith('url:')) {
-                  newsData.url = line.substring('url:'.length).trim();
+                  const rawUrl = line.substring('url:'.length).trim();
+                  // URLの検証
+                  if (isValidUrl(rawUrl)) {
+                    newsData.url = rawUrl;
+                  }
                   currentKey = 'url';
                 } else if (line.toLowerCase().startsWith('日付:')) {
-                  newsData.date = line.substring('日付:'.length).trim();
+                  newsData.date = sanitizeString(line.substring('日付:'.length).trim());
                   currentKey = 'date';
                 } else if (currentKey === 'summary') {
-                  summaryLines.push(line);
+                  summaryLines.push(sanitizeString(line));
                 } else if (!newsData.title && !newsData.summary && !newsData.source && !newsData.url && !newsData.date) {
-                  if (!newsData.title) newsData.title = line;
+                  if (!newsData.title) newsData.title = sanitizeString(line);
                 }
               }
               
@@ -166,9 +216,9 @@ jobs:
               
               // フォールバック処理
               if (!newsData.title && lines.length > 0) {
-                newsData.title = lines[0];
+                newsData.title = sanitizeString(lines[0]);
                 if (lines.length > 1) {
-                  newsData.summary = lines.slice(1).join(' ');
+                  newsData.summary = sanitizeString(lines.slice(1).join(' '));
                 }
               }
               
@@ -194,14 +244,25 @@ jobs:
                 newsData.date = formatDate(today);
               }
               
-              // URLが提供されていない場合は、sourceからURLを構築
-              if (!newsData.url && newsData.source) {
+              // URLの検証と処理
+              if (newsData.url) {
+                if (!isValidUrl(newsData.url)) {
+                  console.log(`Invalid URL found: ${newsData.url}, removing it`);
+                  newsData.url = '';
+                }
+              }
+              
+              // URLが提供されていない場合は、sourceからURLを構築（ドメイン名が有効な場合のみ）
+              if (!newsData.url && newsData.source && isValidDomain(newsData.source)) {
                 newsData.url = `https://${newsData.source}`;
                 console.log(`URL not provided for "${newsData.title}", generated: ${newsData.url}`);
               }
               
-              if (newsData.title) {
+              // タイトルが存在し、かつ最低限の長さがある場合のみ追加
+              if (newsData.title && newsData.title.length >= 3) {
                 parsedItems.push(newsData);
+              } else {
+                console.log(`Skipping news item with invalid title: "${newsData.title}"`);
               }
             }
             
@@ -261,11 +322,15 @@ jobs:
                 throw new Error('Unexpected API response structure');
               }
             } catch (error) {
-              console.error('Error fetching news:', error);
-              // エラーの詳細をログに出力
+              // APIキーなどの機密情報が含まれる可能性のあるエラーメッセージを安全に処理
+              console.error('Error fetching news:', error.message ? error.message.replace(/key=[\w\-]+/g, 'key=REDACTED') : 'Unknown error');
+              
+              // スタックトレースからも機密情報を削除
               if (error.stack) {
-                console.error('Stack trace:', error.stack);
+                const sanitizedStack = error.stack.replace(/key=[\w\-]+/g, 'key=REDACTED');
+                console.error('Stack trace:', sanitizedStack);
               }
+              
               process.exit(1);
             }
           }
