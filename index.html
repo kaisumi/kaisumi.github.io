@@ -16,6 +16,7 @@
             border-radius: 0.5rem; /* Tailwind rounded-lg */
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Tailwind shadow-md */
             transition: transform 0.2s ease-in-out;
+            cursor: pointer; /* クリック可能なことを示すカーソル */
         }
         .news-card:hover {
             transform: translateY(-5px);
@@ -149,12 +150,27 @@
                                     contentHtml += `<span class="source-tag">${newsData.source}</span>`;
                                 }
                                 
-                                // 記事への直接リンクがないため、情報源を検索するリンクを生成
-                                if (newsData.source && newsData.title) {
-                                    contentHtml += `<a href="https://www.google.com/search?q=${encodeURIComponent(newsData.title + " " + newsData.source)}" target="_blank" rel="noopener noreferrer" class="block text-indigo-600 hover:text-indigo-800 text-sm mt-3 font-medium">情報源で検索 <span aria-hidden="true">&rarr;</span></a>`;
+                                // 情報源へのリンク表示
+                                if (newsData.source) {
+                                    contentHtml += `<div class="text-indigo-600 text-sm mt-3 font-medium">情報源を開く <span aria-hidden="true">&rarr;</span></div>`;
                                 }
                                 
                                 newsCard.innerHTML = contentHtml;
+                                
+                                // カード全体にクリックイベントを追加
+                                if (newsData.url) {
+                                    // URLフィールドを使用
+                                    newsCard.addEventListener('click', () => {
+                                        window.open(newsData.url, '_blank', 'noopener,noreferrer');
+                                    });
+                                } else if (newsData.source) {
+                                    // フォールバック: ドメイン名からURLを構築
+                                    const sourceUrl = `https://${newsData.source}`;
+                                    newsCard.addEventListener('click', () => {
+                                        window.open(sourceUrl, '_blank', 'noopener,noreferrer');
+                                    });
+                                }
+                                
                                 newsContainer.appendChild(newsCard);
                             }
                         });

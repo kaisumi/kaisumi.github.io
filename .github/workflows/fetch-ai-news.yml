@@ -52,18 +52,22 @@ jobs:
           1. タイトル (簡潔で分かりやすいもの)
           2. 短い要約 (2-3文程度)
           3. 主要な情報源のドメイン名 (例: techcrunch.com, openai.comなど)
-          4. 発表日付 (YYYY-MM-DD形式)。必ず${oneMonthAgoStr}から${todayStr}の間の日付を使用してください。
+          4. 情報源の完全なURL (例: https://techcrunch.com/2025/06/04/ai-news-article)
+          5. 発表日付 (YYYY-MM-DD形式)。必ず${oneMonthAgoStr}から${todayStr}の間の日付を使用してください。
           
           フォーマット例:
           タイトル: [ニュースタイトル]
           要約: [ニュースの要約]
           情報源: [ドメイン名]
+          URL: [完全なURL]
           日付: [YYYY-MM-DD]
           
           --- (各ニュースの区切り)
           
           上記形式で20件お願いします。古いニュース（${oneMonthAgoStr}より前）は含めないでください。
-          必ず最新のニュースから順番に並べてください。`;
+          必ず最新のニュースから順番に並べてください。
+          
+          重要: 各ニュースには必ず完全なURLを含めてください。URLは実際に存在する記事へのリンクであることが望ましいですが、ドメイン名のホームページ（例：https://openai.com）でも構いません。`;
 
           const chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
           const payload = { contents: chatHistory };
@@ -131,7 +135,7 @@ jobs:
 
             for (const itemText of newsItems) {
               const lines = itemText.split('\n').map(line => line.trim()).filter(line => line);
-              const newsData = { title: '', summary: '', source: '', date: '' };
+              const newsData = { title: '', summary: '', source: '', url: '', date: '' };
               let currentKey = null;
               let summaryLines = [];
 
@@ -145,12 +149,15 @@ jobs:
                 } else if (line.toLowerCase().startsWith('情報源:')) {
                   newsData.source = line.substring('情報源:'.length).trim();
                   currentKey = 'source';
+                } else if (line.toLowerCase().startsWith('url:')) {
+                  newsData.url = line.substring('url:'.length).trim();
+                  currentKey = 'url';
                 } else if (line.toLowerCase().startsWith('日付:')) {
                   newsData.date = line.substring('日付:'.length).trim();
                   currentKey = 'date';
                 } else if (currentKey === 'summary') {
                   summaryLines.push(line);
-                } else if (!newsData.title && !newsData.summary && !newsData.source && !newsData.date) {
+                } else if (!newsData.title && !newsData.summary && !newsData.source && !newsData.url && !newsData.date) {
                   if (!newsData.title) newsData.title = line;
                 }
               }
@@ -185,6 +192,12 @@ jobs:
               // 無効な日付の場合は現在の日付を設定
               if (!isValidDate) {
                 newsData.date = formatDate(today);
+              }
+              
+              // URLが提供されていない場合は、sourceからURLを構築
+              if (!newsData.url && newsData.source) {
+                newsData.url = `https://${newsData.source}`;
+                console.log(`URL not provided for "${newsData.title}", generated: ${newsData.url}`);
               }
               
               if (newsData.title) {
