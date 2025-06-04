@@ -1,11 +1,35 @@
 {
   "items": [
     {
-      "title": "GitHub Actionsでのデモデータ",
-      "summary": "これは初期データです。GitHub Actionsが実行されると、実際のAIニュースに置き換えられます。",
-      "source": "github.com",
-      "date": "2023-05-01"
+      "title": "Google DeepMind、AlphaGeometryを発表 - AIが幾何学の難問を解く",
+      "summary": "Google DeepMindは、人間のオリンピックメダリストレベルの幾何学の問題解決能力を持つAIシステム「AlphaGeometry」を発表しました。これにより、AIの推論能力と創造性が新たなレベルに到達したことが示唆され、特に数学的モデリングや論理的思考を必要とする分野への応用が期待されます。",
+      "source": "deepmind.google",
+      "date": "2024-01-17"
+    },
+    {
+      "title": "Stability AI、Stable Diffusion 3の早期プレビューを発表",
+      "summary": "Stability AIは、次世代画像生成AIモデル「Stable Diffusion 3」の早期プレビューを発表しました。このモデルは、テキストの理解度と画像の品質が大幅に向上し、複雑なプロンプトへの対応能力や詳細な画像の生成能力が向上しています。",
+      "source": "stability.ai",
+      "date": "2024-01-22"
+    },
+    {
+      "title": "OpenAI、GPT Storeを一般公開",
+      "summary": "OpenAIは、ChatGPT上でカスタムAIモデルを共有・利用できる「GPT Store」を一般公開しました。これにより、開発者は自作のGPTsを公開して収益化できるようになり、ユーザーは様々な用途に特化したAIアシスタントを簡単に利用できるようになります。",
+      "source": "openai.com",
+      "date": "2024-01-10 (発表は少し前ですが、ストアの一般公開が最近注目を集めています)"
+    },
+    {
+      "title": "NVIDIA、生成AI向けハードウェアとソフトウェアを強化",
+      "summary": "NVIDIAは、生成AIの開発と実行を加速するための新しいハードウェアとソフトウェアを発表しました。これには、高性能GPUのアップデートや、AIモデルの効率的なデプロイメントを支援するツールなどが含まれており、AI開発者にとって重要な進展となります。",
+      "source": "nvidia.com",
+      "date": "(具体的な発表日は様々ですが、NVIDIAの最近の発表全���を指します)"
+    },
+    {
+      "title": "EU、AI規制法案が最終段階へ - 罰金と透明性義務を強化",
+      "summary": "欧州連合（EU）は、AIのリスクレベルに応じた規制を設ける包括的なAI規制法案の最終調整段階に入りました。この法案は、高リスクAIシステムに対する厳格な規制と透明性義務を課し、違反企業には高額な罰金が科せられる可能性があります。",
+      "source": "reuters.com",
+      "date": "2024-01-24 (最終合意に向けた動き)"
     }
   ],
-  "lastUpdated": "2023-05-01T00:00:00.000Z"
+  "lastUpdated": "2025-06-04T02:09:36.380Z"
 }
