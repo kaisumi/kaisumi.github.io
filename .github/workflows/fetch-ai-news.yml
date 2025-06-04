@@ -117,7 +117,10 @@ jobs:
                 });
               });
 
+              let timedOut = false;
+
               req.on('error', (error) => {
+                if (timedOut) return;
                 console.error('Network error during API request:', error);
                 // エラーメッセージにAPIキーが含まれないように注意
                 reject(new Error('Network error during API request'));
@@ -125,7 +128,8 @@ jobs:
 
               // タイムアウト設定
               req.setTimeout(120000, () => {
-                req.abort();
+                timedOut = true;
+                req.destroy(new Error('timeout'));
                 reject(new Error('API request timed out after 120 seconds'));
               });
 
