@@ -124,9 +124,9 @@ jobs:
               });
 
               // タイムアウト設定
-              req.setTimeout(30000, () => {
+              req.setTimeout(120000, () => {
                 req.abort();
-                reject(new Error('API request timed out after 30 seconds'));
+                reject(new Error('API request timed out after 120 seconds'));
               });
 
               req.write(JSON.stringify(payload));
