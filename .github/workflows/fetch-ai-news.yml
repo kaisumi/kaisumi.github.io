@@ -5,14 +5,16 @@ on:
     - cron: '0 0 * * *'  # 毎日UTC 0:00（日本時間9:00）に実行
   workflow_dispatch:  # 手動実行も可能
 
+# リポジトリコンテンツへの書き込み権限を明示的に付与
+permissions:
+  contents: write
+
 jobs:
   fetch-news:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.PAT }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -169,20 +171,9 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
-      - name: Commit and push if changed
-        run: |
-          git config --global user.name 'GitHub Actions'
-          git config --global user.email 'actions@github.com'
-          git add ai-news.json
-          
-          # 変更がある場合のみコミットとプッシュを実行
-          if ! git diff --quiet || ! git diff --staged --quiet; then
-            git commit -m "Update AI news data"
-            
-            # リポジトリURLにトークンを含めてプッシュ
-            git remote set-url origin https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git
-            git push
-          fi
-        env:
-          # Personal Access Tokenを使用してプッシュ権限を付与
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+      # GitHub Actionsの組み込みアクションを使用してコミットとプッシュを行う
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update AI news data"
+          file_pattern: ai-news.json
