@@ -53,7 +53,7 @@ jobs:
           2. 短い要約 (2-3文程度)
           3. 主要な情報源のドメイン名 (例: techcrunch.com, openai.comなど)
           4. 情報源の完全なURL (例: https://techcrunch.com/2025/06/04/ai-news-article)
-          5. 発表日付 (YYYY-MM-DD形式)。必ず${oneMonthAgoStr}から${todayStr}の間の日付を使用してください。
+          5. 発表日付 (YYYY-MM-DD形式)。
           
           フォーマット例:
           タイトル: [ニュースタイトル]
