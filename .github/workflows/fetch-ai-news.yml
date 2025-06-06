@@ -45,7 +45,8 @@ jobs:
           const oneMonthAgoStr = formatDate(oneMonthAgo);
           
           // Gemini APIへのプロンプト
-          const prompt = `今日は${todayStr}です。ITエンジニア向けに、${oneMonthAgoStr}から${todayStr}までの期間で最も重要と思われるAI関連のニュースを20件挙げてください。
+          const prompt = `今日は${todayStr}です。Web検索して、ITエンジニア向けにAI関連のニュースを調べてください。
+          ${oneMonthAgoStr}から${todayStr}までの期間で最も重要と思われるAI関連のニュースを20件挙げてください。
           必ず最新のニュースを提供し、古い順ではなく新しい順（最新のものから）に並べてください。
           
           各ニュースについて、以下の情報を提供してください。
