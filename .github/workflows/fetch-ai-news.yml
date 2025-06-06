@@ -261,9 +261,7 @@ jobs:
               if (newsData.date) {
                 try {
                   const newsDate = new Date(newsData.date);
-                  isValidDate = !isNaN(newsDate.getTime()) && 
-                                newsDate >= oneMonthAgo && 
-                                newsDate <= today;
+                  isValidDate = !isNaN(newsDate.getTime());
                   
                   if (!isValidDate) {
                     console.log(`Invalid date found: ${newsData.date}, setting to today's date`);
