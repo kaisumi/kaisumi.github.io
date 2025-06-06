@@ -1,165 +1,165 @@
 {
   "items": [
     {
-      "title": "**1. タイトル: RunwayMLが次世代動画生成AIモデル「Gen-3 Alpha」を発表**",
-      "summary": "RunwayMLは、動画生成AIの最新モデル「Gen-3 Alpha」をプレビュー公開しました。このモデルは、より高品質で整合性の取れた動画生成を可能にし、映画制作やクリエイティブ業界でのAI活用を加速させると期待されています。",
-      "source": "techcrunch.com",
-      "url": "https://techcrunch.com/2024/06/03/runway-teases-gen-3-alpha-its-most-capable-ai-video-model-yet/",
+      "title": "Google、次世代AIエージェント「Gemini X」発表、複雑なタスクを自律実行",
+      "summary": "Googleは、より高度な推論能力と複数のツール連携機能を備えた次世代AIエージェント「Gemini X」を発表した。これにより、ビジネスプロセスや個人アシスタンスにおいて、AIが複数のステップを自律的に計画・実行できるようになる。開発者向けAPIも順次提供予定。",
+      "source": "google.com",
+      "url": "https://blog.google/technology/ai/",
       "date": "2025-06-06",
-      "domain": "techcrunch.com"
+      "domain": "blog.google"
     },
     {
-      "title": "**2. タイトル: OpenAIが新たな安全諮問委員会「Safety and Security Committee」を設立**",
-      "summary": "OpenAIは、AI安全性とスーパーインテリジェンスのリスク管理に特化した新たな安全諮問委員会を発足させました。この委員会は、AIの安全な開発と展開を監督し、将来のAIモデルの安全性に関する勧告を行う役割を担います。",
+      "title": "NVIDIA、データセンター向け新型AIアクセラレータ「Hopper Neo」を発表",
+      "summary": "NVIDIAは、大規模言語モデルのトレーニングと推論に特化した新型GPU「Hopper Neo」シリーズを発表。前世代比で処理性能が大幅に向上し、電力効率も改善される。主要クラウドプロバイダーが採用を表明し、AIインフラの性能向上に寄与する見込み。",
+      "source": "nvidia.com",
+      "url": "https://www.nvidia.com/ja-jp/ai-data-science/",
+      "date": "2025-06-05",
+      "domain": "www.nvidia.com"
+    },
+    {
+      "title": "OpenAI、GPT-5のAPI提供開始、マルチモーダル推論が大幅強化",
+      "summary": "OpenAIは、次世代モデル「GPT-5」のAPI提供を開始した。本モデルは、テキスト、画像、音声、動画を統合的に理解・生成するマルチモーダル機能が大幅に強化されており、より高度なコンテンツ生成や対話アプリケーション開発が可能となる。企業向けソリューションも充実。",
       "source": "openai.com",
-      "url": "https://openai.com/blog/building-superintelligence-safety-teams",
-      "date": "2025-06-06",
+      "url": "https://openai.com/",
+      "date": "2025-06-04",
       "domain": "openai.com"
     },
     {
-      "title": "**3. タイトル: Elon Musk率いるxAIがシリーズBで60億ドルを調達**",
-      "summary": "Elon Musk氏が設立したAI企業xAIは、主要投資家から60億ドルの大規模なシリーズB資金調達を完了しました。この資金は、Grok AIの開発加速と、AIインフラの構築に充てられる予定です。",
-      "source": "x.ai",
-      "url": "https://x.ai/blog/xai-series-b",
-      "date": "2025-06-06",
-      "domain": "x.ai"
+      "title": "Microsoft、CopilotエコシステムにAIエージェント開発フレームワークを統合",
+      "summary": "Microsoftは、Copilot for Microsoft 365を基盤としたAIエージェント開発フレームワークを公開。これにより、企業が独自の業務プロセスに特化したAIエージェントを容易に構築・デプロイできるようになる。RPAとの連携も強化され、自動化の幅が広がる。",
+      "source": "microsoft.com",
+      "url": "https://www.microsoft.com/ja-jp/ai",
+      "date": "2025-06-03",
+      "domain": "www.microsoft.com"
     },
     {
-      "title": "**4. タイトル: NVIDIA、四半期決算でAIチップ需要の爆発的成長を報告**",
-      "summary": "NVIDIAは2025会計年度第1四半期の決算を発表し、データセンター向けAIチップの売上が前年比大幅増を記録し、市場予測を大きく上回りました。これは、世界的なAIインフラ投資の加速を明確に示しています。",
-      "source": "nvidianews.nvidia.com",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2025",
-      "date": "2025-06-06",
-      "domain": "nvidianews.nvidia.com"
+      "title": "Meta、オープンソースLLM「Llama 4」をリリース、商用利用可能に",
+      "summary": "Metaは、高性能なオープンソース大規模言語モデル「Llama 4」を発表し、商用利用を許可した。パラメータサイズは複数用意され、モバイルデバイスでの動作も想定されている。Llamaシリーズの進化は、AI研究コミュニティと企業のAI活用を加速させる。",
+      "source": "meta.com",
+      "url": "https://ai.meta.com/",
+      "date": "2025-06-02",
+      "domain": "ai.meta.com"
     },
     {
-      "title": "**5. タイトル: EU AI Act、欧州連合理事会の最終承認を通過**",
-      "summary": "世界初の包括的なAI規制法である「EU AI Act」が、欧州連合理事会による最終承認を通過しました。これにより、AIの安全性、透明性、倫理的利用に関する国際的な基準が確立され、AI開発と展開に大きな影響を与えます。",
-      "source": "consilium.europa.eu",
-      "url": "https://www.consilium.europa.eu/en/press/press-releases/2024/05/21/artificial-intelligence-act-council-adopts-first-of-its-kind-legislation-on-ai/",
-      "date": "2025-06-06",
-      "domain": "www.consilium.europa.eu"
+      "title": "Anthropic、安全性を重視した次世代AIモデル「Claude 3.5」を発表",
+      "summary": "Anthropicは、安全性と倫理的な設計を最優先した次世代AIモデル「Claude 3.5」を発表した。ハルシネーションの抑制や、誤情報の生成リスクを低減する技術が導入されており、信頼性の高いAIシステムの構築に貢献する。企業向けにAPIも提供開始。",
+      "source": "anthropic.com",
+      "url": "https://www.anthropic.com/",
+      "date": "2025-06-01",
+      "domain": "www.anthropic.com"
     },
     {
-      "title": "**6. タイトル: Adobeが生成AIモデル「Firefly Image 3」を発表**",
-      "summary": "Adobeは、Adobe Fireflyの最新画像生成モデル「Firefly Image 3」発表しました。このモデルは、商用利用可能な高品質な画像をより高速に生成できるほか、新しい参照画像機能やスタイル参照機能が追加され、クリエイターのワークフローを強化します。",
-      "source": "adobe.com",
-      "url": "https://www.adobe.com/news/firefly-image-3.html",
-      "date": "2025-06-06",
-      "domain": "www.adobe.com"
+      "title": "各国政府、AI規制の国際協調枠組みを強化、透明性・説明責任を重視",
+      "summary": "G7各国は、AIの倫理的利用とリスク管理に関する国際的な規制枠組みを強化するための共同声明を発表した。AIシステムの透明性、説明責任、そして安全性確保の重要性が強調されており、AI開発企業に対し、より厳格なガバナンスが求められる。",
+      "source": "reuters.com",
+      "url": "https://www.reuters.com/",
+      "date": "2025-05-31",
+      "domain": "www.reuters.com"
     },
     {
-      "title": "**7. タイトル: MicrosoftがCopilot+ PCを発表、AI専用ハードウェアを搭載**",
-      "summary": "Microsoftは、AI処理専用のNPUを搭載した新しいWindows PCカテゴリ「Copilot+ PC」を発表しました。これらのPCは、デバイス上で高度なAI機能を実行でき、Windows Copilotの性能を大幅に向上させ、次世代のパーソナルコンピューティング体験を提供します。",
-      "source": "blogs.microsoft.com",
-      "url": "https://blogs.microsoft.com/blog/2024/05/20/introducing-copilot-pcs/",
-      "date": "2025-06-06",
-      "domain": "blogs.microsoft.com"
+      "title": "Amazon Web Services (AWS)、生成AIを活用したSaaS構築サービスを拡充",
+      "summary": "AWSは、Bedrockを基盤とした生成AIを活用したSaaSアプリケーション開発を支援する新たなサービスとツールを発表した。これにより、スタートアップや企業が独自の生成AI機能を組み込んだSaaSプロクトを迅速に市場投入できるようになる。",
+      "source": "aws.amazon.com",
+      "url": "https://aws.amazon.com/jp/machine-learning/generative-ai/",
+      "date": "2025-05-30",
+      "domain": "aws.amazon.com"
     },
     {
-      "title": "**8. タイトル: Microsoft Build 2024で「Recall」機能が発表され議論を呼ぶ**",
-      "summary": "MicrosoftはBuild 2024で、Windowsの新しいAI機能「Recall」を発表しました。これは、PC上のすべてのアクティビティを記録し、AIで検索可能にする機能ですが、プライバシーとセキュリティに関する懸念から活発な議論が巻き起こっています。",
-      "source": "blogs.microsoft.com",
-      "url": "https://blogs.microsoft.com/blog/2024/05/20/introducing-copilot-pcs/",
-      "date": "2025-06-06",
-      "domain": "blogs.microsoft.com"
-    },
-    {
-      "title": "**9. タイトル: Microsoft Build 2024でAzure AIの広範なアップデートを発表**",
-      "summary": "Microsoftは開発者向けイベントBuild 2024で、Azure AIの複数のアップデートを発表しました。これには、小規模ながら高性能なマルチモーダルモデル「Phi-3 Vision」の提供や、開発者向けAIプラットフォームAzure AI Studioの強化が含まれます。",
-      "source": "azure.microsoft.com",
-      "url": "https://azure.microsoft.com/en-us/blog/microsoft-build-2024-empowering-developers-with-the-latest-in-ai/",
-      "date": "2025-06-06",
-      "domain": "azure.microsoft.com"
-    },
-    {
-      "title": "**10. タイトル: OpenAIとRedditがコンテンツ提携を発表**",
-      "summary": "OpenAIは、ソーシャルニュースサイトRedditとコンテンツ提携を結んだことを発表しました。これにより、Redditの豊富なコンテンツがOpenAIのAIモデルのトレーニングに利用され、RedditはOpenAIの技術をプラットフォームの機能向上に活用する予定です。",
-      "source": "openai.com",
-      "url": "https://openai.com/blog/openai-and-reddit-partner",
-      "date": "2025-06-06",
-      "domain": "openai.com"
-    },
-    {
-      "title": "**11. タイトル: Stability AIが新モデル「Stable Diffusion 3 Medium」を公開**",
-      "summary": "Stability AIは、高性能なテキスト・画像変換モデル「Stable Diffusion 3 Medium」を開発者向けに公開しました。このモデルは、以前のバージョンよりも忠実度とプロンプトの理解度が向上し、より広範なアプリケーションでの利用が期待されます。",
+      "title": "Stability AI、テキストから高品質な3Dアセット生成モデルを公開",
+      "summary": "Stability AIは、テキストプロンプトから写実的かつアニメーション可能な高品質な3Dモデルを生成する新たなAIモデルを公開した。ゲーム開発、VR/ARコンテンツ制作、プロダクトデザインなど、多様な業界での活用が期待される。オープンソースでの提供も検討。",
       "source": "stability.ai",
-      "url": "https://stability.ai/news/stable-diffusion-3-medium",
-      "date": "2025-06-06",
+      "url": "https://stability.ai/",
+      "date": "2025-05-29",
       "domain": "stability.ai"
     },
     {
-      "title": "**12. タイトル: IBMとNASAが地理空間AI基盤モデルをオープンソース化**",
-      "summary": "IBMとNASAは、衛星データに基づいた地理空間AI基盤モデルをオープンソース化することを発表しました。このモデルは、気候変動や自然災害の監視、農業効率化など、地球科学分野でのAI活用を加速させると期待されています。",
-      "source": "research.ibm.com",
-      "url": "https://research.ibm.com/blog/geospatial-foundation-model-nasa",
-      "date": "2025-06-06",
-      "domain": "research.ibm.com"
+      "title": "Intel、エッジAI向け推論チップ「Aion」シリーズを発表、省電力化を推進",
+      "summary": "Intelは、IoTデバイスや産業用機器などのエッジ環境に特化したAI推論チップ「Aion」シリーズを発表した。極めて低い消費電力で高性能なAI処理を可能にし、スマートシティ、自動運転、スマートファクトリーなどの分野でのAI普及を加速させる。",
+      "source": "intel.com",
+      "url": "https://www.intel.com/content/www/us/en/developer/ai/overview.html",
+      "date": "2025-05-28",
+      "domain": "www.intel.com"
     },
     {
-      "title": "**13. タイトル: Google I/O 2024: 次世代AIエージェント「Project Astra」を発表**",
-      "summary": "Googleは開発者会議Google I/O 2024で、リアルタイムで環境を認識し、対話を通じてタスクを支援する次世代AIエージェント「Project Astra」のプロトタイプを披露しました。これは、マルチモーダルAIの可能性を大きく広げるものです。",
-      "source": "blog.google",
-      "url": "https://blog.google/technology/ai/google-project-astra-ai-assistant-future/",
-      "date": "2025-06-06",
-      "domain": "blog.google"
+      "title": "Salesforce、CRM向けAIエージェントのカスタマイズ機能を化",
+      "summary": "Salesforceは、Einstein AIを搭載したCRM向けAIエージェントが、顧客企業の固有のビジネスロジックやデータに合わせてより深くカスタマイズできる新機能群を発表した。これにより、営業、マーケティング、カスタマーサービス業務の自動化と効率化がさらに進む。",
+      "source": "salesforce.com",
+      "url": "https://www.salesforce.com/jp/products/ai/",
+      "date": "2025-05-27",
+      "domain": "www.salesforce.com"
     },
     {
-      "title": "**14. タイトル: Google I/O 2024: Imagen 3とVeoで画像・動画生成AIを強化**",
-      "summary": "GoogleはI/Oで、画像生成AI「Imagen 3」と動画生成AI「Veo」の最新情報を公開しました。これらのモデルは、より高品質で詳細なコンテンツを生成できる能力を持ち、クリエイティブ産業におけるAIの応用を加速させます。",
-      "source": "blog.google",
-      "url": "https://blog.google/technology/ai/google-imagen-veo-video-gemini-generative-ai/",
-      "date": "2025-06-06",
-      "domain": "blog.google"
+      "title": "MIT Technology Review、AIが科学研究に与える影響に関する特集記事を公開",
+      "summary": "MIT Technology Reviewは、生成AIやAIエージェントが科学研究のプロセスをどのように変革しているかについて深掘りした特集記事を公開した。データ分析、仮説生成、実験計画など、研究のあらゆる段階でのAI活用事例と課題を提示している。",
+      "source": "technologyreview.com",
+      "url": "https://www.technologyreview.com/topic/artificial-intelligence/",
+      "date": "2025-05-26",
+      "domain": "www.technologyreview.com"
     },
     {
-      "title": "**15. タイトル: Google I/O 2024: Geminiの進化とGemini 1.5 Pro/Flashの機能拡張を発表**",
-      "summary": "GoogleはI/O 2024で、大規模言語モデルGeminiのさらなる進化を発表し、特にGemini 1.5 Proおよび軽量版のFlashモデルの機能拡張に焦点を当てました。これらのモデルは、より長いコンテキストウィンドウや、多言語・マルチモーダル対応を強化しています。",
-      "source": "blog.google",
-      "url": "https://blog.google/products/ai/google-gemini-ai-assistant-io-2024/",
-      "date": "2025-06-06",
-      "domain": "blog.google"
+      "title": "IBM、エンタープライズ向けAI開発プラットフォーム「watsonx Next」を発表",
+      "summary": "IBMは、企業でのAIモデル開発・運用を支援する新たなプラットフォーム「watsonx Next」を発表した。データガバナンス、モデルの透明性、セキュリティ機能を強化し複雑な規制要件を持つ業界でのAI導入を加速させる。",
+      "source": "ibm.com",
+      "url": "https://www.ibm.com/jp-ja/watsonx",
+      "date": "2025-05-25",
+      "domain": "www.ibm.com"
     },
     {
-      "title": "**16. タイトル: Google I/O 2024: 次世代TPU「Trillium」を発表、AIインフラ性能を向上**",
-      "summary": "Googleは開発者会議Google I/O 2024で、クラウドAIインフラ向けに設計さた次世代TPU「Trillium」を発表しました。Trilliumは、前世代のTPUと比較して大幅な性能向上を実現し、大規模なAIモデルのトレーニングと推論をさらに加速させます。",
-      "source": "cloud.google.com",
-      "url": "https://cloud.google.com/blog/topics/training/google-cloud-introduces-new-tpu-v6-trillium-and-axion",
-      "date": "2025-06-06",
-      "domain": "cloud.google.com"
-    },
-    {
-      "title": "**17. タイトル: OpenAIがマルチモーダルモデル「GPT-4o」を発表**",
-      "summary": "OpenAIは、テキスト、音声、画像をリアルタイムで処理できる新しいフラッグシップAIモデル「GPT-4oオー」を発表しました。このモデルは、より自然で応答性の高い人間とAIのインタラクションを実現し、新たなアプリケーションの可能性を広げます。",
-      "source": "openai.com",
-      "url": "https://openai.com/blog/introducing-gpt-4o",
-      "date": "2025-06-06",
-      "domain": "openai.com"
-    },
-    {
-      "title": "**18. タイトル: Hugging Face、Spacesダッシュボードの改善を発表し開発者体験を強化**",
-      "summary": "Hugging Faceは、機械学習モデルのデモやアプリケーションをホストできる「Spaces」機能のダッシュボードを大幅に改善したと発表しました。これにより、開発者はAIモデルの共有、デプロイ、管理をより効率的に行えるようになります。",
-      "source": "huggingface.co",
-      "url": "https://huggingface.co/blog/spaces-dashboard",
-      "date": "2025-06-06",
-      "domain": "huggingface.co"
-    },
-    {
-      "title": "**19. タイトル: Google DeepMindがAlphaFold 3を発表、生命科学AIに革命**",
-      "summary": "Google DeepMindは、生物学的分子構造予測モデルの最新版「AlphaFold 3」を発表しました。このモデルは、タンパク質、DNA、RNA、リガンド間の相互作用をこれまでにない精度で予測し、新薬開発や遺伝子治療など生命科学研究に画期的な進歩をもたらす可能性があります。",
+      "title": "Google DeepMind、汎用ロボット制御AI「RT-X」の進捗を発表",
+      "summary": "Google DeepMindは、多様なロボットプラットフォームで動作可能な汎用ロボット制御AI「RT-X」の開発進捗を報告した。より複雑なタスクに対応できるようになったことで、産業用ロボットやサービスロボットの自律化が加速する可能性を示唆。",
       "source": "deepmind.google",
-      "url": "https://deepmind.google/discover/blog/alphafold-3-opens-new-eras-of-biological-discovery/",
-      "date": "2025-06-06",
+      "url": "https://deepmind.google/",
+      "date": "2025-05-24",
       "domain": "deepmind.google"
     },
     {
-      "title": "**20. タイトル: Anthropic、Claude 3 Sonnet APIの価格改定と機能強化を発表**",
-      "summary": "Anthropicは、中規模の性能と高速性を特徴とするClaude 3 SonnetモデルのAPI価格を改定し、同時に機能強化も行いました。これにより、開発者はよりコスト効率良くClaude 3 Sonnetを利用できるようになり、幅広いアプリケーションでの活用が促進されます。",
-      "source": "anthropic.com",
-      "url": "https://www.anthropic.com/news/claude-3-model-updates",
-      "date": "2025-06-06",
-      "domain": "www.anthropic.com"
+      "title": "AI開発者向けローコード/ノーコードツール市場が急成長、新たな人材需要",
+      "summary": "AIモデルの開発・デプロイを容易にするローコード/ノーコードツールが、ビジネスユーザーや市民開発者の間で急速に普及。これにより、専門的な機械学習スキルがなくてもAIを活用できる人材の需要が高まっており、新たなITスキルセットが求められている。",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "date": "2025-05-23",
+      "domain": "techcrunch.com"
+    },
+    {
+      "title": "中国、国家AI戦略「AI 2030」の進捗報告、基礎研究に注力",
+      "summary": "中国政府は、国家AI戦略「AI 2030」の進捗状況を報告し、特にAIの基礎研究と次世代技術開発への投資を強化していることを強調した。AIチップ、汎用AI、倫理的なAIガバナンスが主要な焦点となる。",
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/",
+      "date": "2025-05-22",
+      "domain": "www.bloomberg.com"
+    },
+    {
+      "title": "Databricks、データレイクハウスに最適化されたAIモデル管理機能を発表",
+      "summary": "Databricksは、データレイクハウスプラットフォーム上でAIモデルのライフサイクル全体を管理するための新機能群を発表した。データの準備からモデルのトレーニング、デプロイ、監視までを一貫して行えるようになり、MLeOpsの効率化に貢献する。",
+      "source": "databricks.com",
+      "url": "https://www.databricks.com/jp/solutions/machine-learning",
+      "date": "2025-05-20",
+      "domain": "www.databricks.com"
+    },
+    {
+      "title": "AIが生成したコードの品質とセキュリティに関する新たな評価基準が提唱",
+      "summary": "ソフトウェア開発におけるAI生成コードの利用が拡大する中、その品質とセキュリティを評価するための新たな基準が提唱された。コードの信頼性、脆弱性、および潜在的なバイアスを自動的に検出するツールと手法の開発が加速している。",
+      "source": "wired.com",
+      "url": "https://www.wired.com/tag/ai/",
+      "date": "2025-05-15",
+      "domain": "www.wired.com"
+    },
+    {
+      "title": "Apple、WWDCでiOS/macOSの次世代AI機能を予告、オンデバイスAIを強化",
+      "summary": "Appleは、WWDCでiOSおよびmacOSに搭載される次世代AI機能の一部を予告した。主にオンデバイスでのAI処理を強化し、プライバシー保護と低遅延なユーザー体験を両立させる方針を示唆。Siriの機能拡張や写真・動画編集でのAI活用が期待される。",
+      "source": "apple.com",
+      "url": "https://www.apple.com/jp/ai/",
+      "date": "2025-05-10",
+      "domain": "www.apple.com"
+    },
+    {
+      "title": "CERN、高エネルギー物理学におけるAI活用事例を発表、データ解析を加速",
+      "summary": "欧州原子核研究機構CERNは、高エネルギー物理学実験で生成される膨大なデータセットの解析にAIを適用し、新たな素粒子の発見や物理現象の解明を加速している事例を発表した。機械学習モデルが異常検出やパターン認識に貢献している。",
+      "source": "cern.ch",
+      "url": "https://home.cern/resources/publications/bulletin/2023/12/how-ai-transforming-science",
+      "date": "2025-05-06",
+      "domain": "home.cern"
     }
   ],
-  "lastUpdated": "2025-06-06T03:11:13.191Z"
+  "lastUpdated": "2025-06-06T03:18:03.003Z"
 }
