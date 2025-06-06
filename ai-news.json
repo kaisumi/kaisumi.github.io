@@ -1,165 +1,165 @@
 {
   "items": [
     {
-      "title": "OpenAI、音声・画像・テキスト対応の次世代AIモデル「GPT-5 Omni」を発表",
-      "summary": "OpenAIは、年次イベントで次世代のマルチモーダルAIモデル「GPT-5 Omni」を発表しました。このモデルは、リアルタイムでの音声、画像、テキストをシームレスに理解・生成し、人間とのより自然で直感的な対話を可能にします。開発者向けAPIも提供され、新たなAIアプリケーション開発が加速すると期待されています。",
+      "title": "Databricks、生成AIアプリ開発を加速するMosaic AI Toolsを発表",
+      "summary": "Databricksは、企業がカスタムLLMを開発・デプロイし、生成AIアプリケーションを構築するための包括的なツール群「Mosaic AI Tools」を発表しました。この新サービスは、データ管理からモデル開発、デプロイ、監視までをEnd-to-Endでサポートし、信頼性の高いAIシステム構築を支援します。",
+      "source": "databricks.com",
+      "url": "https://www.databricks.com/blog/mosaic-ai-tools-launch",
+      "date": "2024-05-28",
+      "domain": "www.databricks.com"
+    },
+    {
+      "title": "タトル: Microsoft Build 2024で「Copilot+ PC」を発表、オンデバイスAIを加速",
+      "summary": "Microsoftは開発者会議Build 2024で、大規模言語モデルをローカルで実行できる「Copilot+ PC」を発表しました。これにより、AI処理をクラウドだけでなくデバイス上でも高速に行えるようになり、新たなAIアプリケーション開発の可能性が広がります。Azure AIサービスの進化も多数発表されました。",
+      "source": "news.microsoft.com",
+      "url": "https://news.microsoft.com/build-2024/",
+      "date": "2024-05-21",
+      "domain": "news.microsoft.com"
+    },
+    {
+      "title": "Google I/O 2024でGeminiの進化とProject Astraを発表",
+      "summary": "GoogleはI/O 2024で、Geminiモデルの進化と、リアルタイムで環境を理解し対話する「Project Astra」を発表しました。動画生成モデルVeoやイメージ生成の新機能など、クリエイティブAIの強化も示され、GeminiがGoogleのあらゆる製品に深く統合される方針が強調されました。",
+      "source": "blog.google",
+      "url": "https://blog.google/technology/developers/google-io-2024-key-announcements/",
+      "date": "2024-05-14",
+      "domain": "blog.google"
+    },
+    {
+      "title": "OpenAI、音声・画像・テキストに対応するマルチモーダルAI「GPT-4o」を発表",
+      "summary": "OpenAIは、テキストだけでなく音声や画像も入力・出力できる新しいマルチモーダルモデル「GPT-4o」\"omni\"の\"o\"を発表しました。これにより、リアルタイムでの自然な対話が可能となり、より人間らしいインタラクションを実現します。特に音声応答は232ミリ秒という高速性を実現し、感情を読み取る能力も備えています。",
       "source": "openai.com",
-      "url": "https://openai.com/",
-      "date": "2025-06-06",
+      "url": "https://openai.com/index/hello-gpt-4o/",
+      "date": "2024-05-13",
       "domain": "openai.com"
     },
     {
-      "title": "Google、エンタープライズ向けにセキュリティとカスタム機能を強化した「Gemini Ultimate」を発表",
-      "summary": "Googleは、年次開発者会議において、企業ユーザー向けに設計された高性能AIモデル「Gemini Ultimate」を発表しました。このバージョンは、厳格なデータセキュリティ、コンプライアンス要件、そして企業の特定ニーズに合わせたカスタマイズ機能を強化しており、業界特有のAIソリューション開発を支援します。ビジネスにおけるAI活用の障壁をさらに下げることが期待されます。",
-      "source": "google.com",
-      "url": "https://google.com/",
-      "date": "2025-06-05",
-      "domain": "google.com"
+      "title": "Google DeepMindが生物学的構造予測のAlphaFold 3を発表",
+      "summary": "Google DeepMindは、タンパク質、DNA、RNA、リガンドなどの分子構造を高い精度で予測する新なAIモデル「AlphaFold 3」を発表しました。これは医薬品開発や生物学研究に革命をもたらす可能性があり、開発者は学術利用のためにAPIを通じてアクセス可能です。",
+      "source": "deepmind.google",
+      "url": "https://deepmind.google/discover/blog/alphafold-3-opens-up-new-vistas-across-biology/",
+      "date": "2024-05-08",
+      "domain": "deepmind.google"
     },
     {
-      "title": "NVIDIA、データセンターAIインフラを加速する次世代AIスーパーチップ「Spectrum X800」を発表",
-      "summary": "NVIDIAは、データセンターにおけるAIワークロードを劇的に加速させるための次世代AIスーパーチップ「Spectrum X800」を発表しました。このチップは、大規模言語モデルのトレーニングと推論において、従来の製品を大きく上回る性能を発揮し、クラウドプロバイダーや研究機関がより高度なAIモデルを効率的に運用するための基盤を提供します。AIインフラの性能限界を押し上げる重要な一歩となります。",
-      "source": "nvidia.com",
-      "url": "https://www.nvidia.com/ja-jp/",
-      "date": "2025-06-04",
-      "domain": "www.nvidia.com"
-    },
-    {
-      "title": "Anthropic、「Claude 4」を発表し安全性と企業向け機能に注力",
-      "summary": "Anthropicは、最新の大規模言語モデル「Claude 4」を公開しました。このモデルは、AIの安全性と倫理的な開発に特に重点を置いており、企業向けに強化されたデータプライバシー保護機能と、特定の業務に最適化されたカスタマイズオプションを提供します。信頼性の高いAIソリューションを求める企業からの注目を集めています。",
-      "source": "anthropic.com",
-      "url": "https://www.anthropic.com/",
-      "date": "2025-06-03",
-      "domain": "www.anthropic.com"
-    },
-    {
-      "title": "EU AI Actが正式施行、高リスクAIシステムへの厳格な規制が開始",
-      "summary": "欧州連合EUは、世界で最も包括的なAI規制法案である「EU AI Act」が正式に施行されたことを発表しました。これにより、医療、交通、教育など高リスクと分類されるAIシステムに対して、厳格な透明性、安全性、およびデータ管理の要件が課せられます。AI開発企業は、グローバルな市場展開において新たな法的基準への対応が急務となります。",
-      "source": "reuters.com",
-      "url": "https://www.reuters.com/",
-      "date": "2025-06-02",
-      "domain": "www.reuters.com"
-    },
-    {
-      "title": "Microsoft、Copilotの業界特化型ソリューションを拡大、医療・金融分野へ本格展開",
-      "summary": "Microsoftは、ビジネス向けAIアシスタント「Copilot」の提供範囲を拡大し、医療、金融、製造業などの特定の業界に特化したソリューションを本格展開すると発表しました。これにより、各業界固有のデータや業務プロセスに合わせたAI活用が促進され、企業はより効率的かつ安全にAIを導入できるようになります。Microsoftのクラウドインフラと連携し、高いセキュリティ水準を維持しま。",
-      "source": "microsoft.com",
-      "url": "https://www.microsoft.com/ja-jp/",
-      "date": "2025-06-01",
-      "domain": "www.microsoft.com"
-    },
-    {
-      "title": "AppleがiOS/macOS向けの新AI機能「Apple Cognito」を発表、オンデバイスAIを強化",
-      "summary": "Appleは、次期iOSおよびmacOSにおいて、プライバシーを重視した新たなオンデバイスAI機能「Apple Cognito」を発表しました。これにより、ユーザーのデバイス上で高度なAI処理が可能になり、より高速でパーソナライズされた体験を提供します。特に、ユーザーデータがクラウドに送信されることなく処理されるため、セキュリティとプライバシーが大幅に向上します。",
+      "title": "Apple、M4チップを発表しiPad Proに搭載 - オンデバイスAI性能を強調",
+      "summary": "Appleは新型iPad Proに、大幅に性能向上した次世代チップ「M4」を搭載すると発表しました。M4はAI処理に特化したNeural Engineをさらに強化し、オンデバイスでのAIタスクをこれまで以上に高速かつ効率的に実行できます。これはApple製品におけるAI機能の深化を示唆しています。",
       "source": "apple.com",
-      "url": "https://www.apple.com/jp/",
-      "date": "2025-05-31",
+      "url": "https://www.apple.com/newsroom/2024/05/apple-unveils-new-ipad-pro-with-stunning-ultratina-xdr-display-and-the-breakthrough-m4-chip/",
+      "date": "2024-05-07",
       "domain": "www.apple.com"
     },
     {
-      "title": "AI開発プラットフォーム「Synapse AI」がシリーズCで2億ドルを調達、ユニコーン企業に",
-      "summary": "AIモデルの開発・運用を支援するプラットフォームを提供するスタートアップ「Synapse AI」が、シリーズCラウンドで2億ドルの資金調達に成功し、評価額が10億ドルを超えユニコーン企業となりました。この資金は、製品開発の加速とグローバル市場への拡大に充てられる予定です。AI開発の民主化に貢献するとして注目されています",
-      "source": "techcrunch.com",
-      "url": "https://techcrunch.com/",
-      "date": "2025-05-30",
-      "domain": "techcrunch.com"
+      "title": "Microsoft、小規模ながら高性能なLLM「Phi-3 Mini」を公開",
+      "summary": "Microsoft Researchは、モバイルデバイスやエッジ環境での動作に最適化された小規模な大規模言語モデルLLM「Phi-3 Mini」を発表しました。同モデルは、パラメータ数が38億と小さいにもかかわらず、同規模の他のモデルを凌駕する性能を発揮し、より広範なデバイスでのAI活用を可能にします。",
+      "source": "microsoft.com",
+      "url": "https://www.microsoft.com/en-us/research/blog/phi-3-mini-a-highly-capable-and-cost-effective-small-language-model/",
+      "date": "2024-04-23",
+      "domain": "www.microsoft.com"
     },
     {
-      "title": "主要AI企業が生成AIの「ウォーターマーク」標準化で合意、コンテンツの信頼性確保へ",
-      "summary": "Google、OpenAI、Microsoftなどの主要AI開発企業は、生成AIによって作成されたコンテンツ画像、音声、テキストにデジタルウォーターマークを埋め込む技術の標準化について合意したと発表しました。この取り組みは、AI生成コンテンツの透明性を高め、フェイクニュースや誤情報の拡散を防ぎ、デジタルコンテンツの信頼性を確保することを目的としています。",
-      "source": "wired.com",
-      "url": "https://www.wired.com/",
-      "date": "2025-05-29",
-      "domain": "www.wired.com"
+      "title": "Meta、オープンソースLLMの最新版「Llama 3」シリーズをリリース",
+      "summary": "Metaは、オープンソースの大規模言語モデルの最新世代「Llama 3」をリリースしました。8Bおよび70Bの2つのモデルサイズが提供され、推論能力が大幅に向上しています。多言語対応やマルチモーダル機能も今後のアップデートで強化される予定で、開発者コミュニティに大きな影響を与えることが期待されます。",
+      "source": "ai.meta.com",
+      "url": "https://ai.meta.com/blog/meta-llama-3/",
+      "date": "2024-04-18",
+      "domain": "ai.meta.com"
     },
     {
-      "title": "AI創薬企業「BioSense AI」が、新薬候補物質の発見速度を10倍に向上させる技術を発表",
-      "summary": "AIを活用して新薬開発を行うスタートアップ「BioSense AI」が、AIとロボティクスを組み合わせることで、新薬候補物質のスクリーニング速度を従来の10倍に向上させる画期的な技術を発表しました。この技術により、臨床試験に進むまでの時間を大幅に短縮し、より迅速に患者に新しい治療法を届けられる可能性が開かれました。製薬業界に大きな変革をもたらすと期待されています。",
-      "source": "bloomberg.com",
-      "url": "https://www.bloomberg.com/",
-      "date": "2025-05-28",
-      "domain": "www.bloomberg.com"
+      "title": "xAI、マルチモーダル対応の「Grok-1.5V」を発表",
+      "summary": "Elon Musk率いるxAIは、テキストだけでなく画像やドキュメントなどの視覚情報も理解できるマルチモーダルAIモデル「Grok-1.5V」を発表しました。このモデルは、複雑な図表や写真を解析し、それに基づいて推論を行う能力を持ち、現実世界の理解力を高めています。",
+      "source": "x.ai",
+      "url": "https://x.ai/blog/grok-1.5v",
+      "date": "2024-04-12",
+      "domain": "x.ai"
     },
     {
-      "title": "Boston Dynamicsが新型人型ロボット「Atlas NextGen」を発表、AIによる高度なタスク実行が可能に",
-      "summary": "ロボット開発のBoston Dynamicsが、AIを搭載した新型人型ロボット「Atlas NextGen」を公開しました。この新型ロボットは、より高度な自己学習能力と環境適応能力を持ち、複雑な作業現場や災害対応において、人間が介入することなく自律的に多様なタスクを実行できるよう設計されています。ロボティクスとAIの融合が実用化に一歩近づきました。",
-      "source": "bostondynamics.com",
-      "url": "https://www.bostondynamics.com/",
-      "date": "2025-05-27",
-      "domain": "www.bostondynamics.com"
+      "title": "Intel、NVIDIAに対抗するAIアクセラレータ「Gaudi 3」を発表",
+      "summary": "Intelは、NVIDIAのAIチップ「H100」に対抗する次世代AIアクセラレータ「Gaudi 3」を発表しました。Gaudi 3は、推論性能と学習効率において大幅な向上を謳っており、より多くの企業がAIワークロードを安価に実行できるよう選択肢を広げることを目指します。",
+      "source": "intel.com",
+      "url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-gaudi3-powering-generative-ai.html",
+      "date": "2024-04-09",
+      "domain": "www.intel.com"
     },
     {
-      "title": "Qualcommが次世代モバイル向けAIチップ「Snapdragon Mind」を発表、デバイス上のAI処理能力を強化",
-      "summary": "Qualcommは、スマートフォンやウェアラブルデバイス向けの次世代AIチップ「Snapdragon Mind」を発表しました。この新しいチップは、デバイス上でのAI処理能力を大幅に向上させ、クラウドへの依存を減らしながら、より高速でプライバシーに配慮したAI機能例: 高度な画像処理、リアルタイム翻訳、パーソナルアシスタントを実現します。エッジAIの普及を加速させるでしょう。",
-      "source": "qualcomm.com",
-      "url": "https://www.qualcomm.com/",
-      "date": "2025-05-26",
-      "domain": "www.qualcomm.com"
-    },
-    {
-      "title": "MITがAI専門家育成のための新たなオンラインプログラムを開設、スキルギャップ解消を目指す",
-      "summary": "マサチューセッツ工科大学MITは、急増するAI分野の専門家需要に応えるため、実践的なAI技術と倫理を学ぶことができる新たなオンライン専門プログラムを開設しました。このプログラムは、業界のニーズに合わせたカリキュラムを提供し、AIエンジニアや研究者を目指す世界中の学習者が最先端の知識とスキルを習得できるよう支援します。",
-      "source": "mit.edu",
-      "url": "https://www.mit.edu/",
-      "date": "2025-05-25",
-      "domain": "www.mit.edu"
-    },
-    {
-      "title": "AdobeがCreative Cloudに新AI機能「Sensei Compose」を統合、デザイン・動画制作を効率化",
-      "summary": "Adobeは、クリエイティブスイート「Creative Cloud」に、生成AIを活用した新機能「Sensei Compose」を統合すると発表しました。この機能は、ユーザーの意図を汲み取って自動的にデザイン要素や動画シーケンスを提案・生成し、デザインや動画制作のークフローを大幅に効率化します。クリエイターの創造性を拡張するツールとして期待されています。",
-      "source": "adobe.com",
-      "url": "https://www.adobe.com/jp/",
-      "date": "2025-05-24",
-      "domain": "www.adobe.com"
-    },
-    {
-      "title": "AIを活用したサイバーセキュリティ企業「Darktrace」が、リアルタイム脅威検知ソリューションを強化",
-      "summary": "AI駆動型サイバーセキュリティのリーディングカンパニーであるDarktraceは、自律型サイバーセキュリティAIプラットフォームの最新版を発表し、未知のサイバー脅威に対するリアルタイム検知と自動対応能力をさらに強化しました。AIがネットワーク内の異常な振る舞いを瞬時に学習・識別することで、高度なサイバー攻撃からの防御を自動化し、企業システムの安全性を高めます。",
-      "source": "darktrace.com",
-      "url": "https://www.darktrace.com/ja/",
-      "date": "2025-05-23",
-      "domain": "www.darktrace.com"
-    },
-    {
-      "title": "IBMが量子コンピューティングとAIの融合研究で新成果、複雑な最適化問題解決に道",
-      "summary": "IBMの研究チームは、量子コンピューティングとAI技術を融合させることで、従来のコンピューターでは解決が困難だった複雑な最適化問題において画期的な進歩を達成したと発表しました。の成果は、新素材開発、ロジスティクス、金融モデリングなど多岐にわたる分野で、より効率的かつ革新的なソリューションを導き出す可能性を秘めています。",
-      "source": "ibm.com",
-      "url": "https://www.ibm.com/jp-ja",
-      "date": "2025-05-22",
-      "domain": "www.ibm.com"
-    },
-    {
-      "title": "国連がAIガバナンスに関する国際フレームワークの草案を発表、倫理的開発を推進",
-      "summary": "国際連合UNは、AI技術の倫理的かつ責任ある開発と利用を促進するための国際的なガバナンスフレームワークの草案を発表しました。この草案は、AIの公平性、透明性、説明責任、そして人権尊重の原則を国際社会で共有することを目的としており、各国政府や企業、市民社会の協力体制の構築を呼びかけています。",
-      "source": "un.org",
-      "url": "https://www.un.org/",
-      "date": "2025-05-21",
-      "domain": "www.un.org"
-    },
-    {
-      "title": "GoogleがデータセンターAIのエネルギー効率を20%改善する新技術を導入",
-      "summary": "Googleは、大規模なデータセンターで稼働するAIワークロードのエネルギー効率を平均20%改善する新たな最適化技術を導入したと発表しました。この技術は、AIモデルの設計とインフラの運用を統合的に最適化することで、AIの計算量を維持しつ消費電力を大幅に削減します。持続可能なAI開発に向けた大きな一歩となります。",
-      "source": "google.com",
-      "url": "https://google.com/",
-      "date": "2025-05-20",
-      "domain": "google.com"
-    },
-    {
-      "title": "MetaがHorizon OSに高度なAIキャラクター機能を統合、メタバース体験を深化",
-      "summary": "Metaは、VR/ARプラットフォーム「Horizon OS」の次期アップデートにおいて、より高度なAIキャラクター機能を統合すると発表しました。これにより、メタバース空間でユーザーがインタラクションするAIアバターが、より自然な会話や感情表現、行動パターンを示すようになります。メタバースにおける社会的交流とエンターテイメント体験がさらに深化することが期待されます。",
-      "source": "meta.com",
-      "url": "https://www.meta.com/jp/",
-      "date": "2025-05-19",
-      "domain": "www.meta.com"
-    },
-    {
-      "title": "Hugging Faceが次世代オープンソースLLM「HuggingChat Pro」を公開、開発者コミュニティを活性化",
-      "summary": "オープンソースAIコミュニティを牽引するHugging Faceは、商用利用も可能な次世代の大規模言語モデル「HuggingChat Pro」を公開しました。このモデルは、高い性能と柔軟なカスタマイズ性を提供し、世界中の開発者が独自のAIアプリケーションを構築るための強力な基盤となります。オープンソースAIのさらなる普及とイノベーションを促進すると期待されています。",
+      "title": "Hugging FaceとGoogle Cloudがパートナーシップを強化、オープンAIを推進",
+      "summary": "Hugging FaceとGoogle Cloudは、オープンソースAIモデルのアクセスとデプロイを容易にするためのパートナーシップ強化を発表しました。これにより、Hugging FaceのモデルをGoogle Cloudのインフラ上でより効率的に利用できるようになり、開発者はオープンなAIエコシステムへの貢献と利用が加速されます。",
       "source": "huggingface.co",
-      "url": "https://huggingface.co/",
-      "date": "2025-05-18",
+      "url": "https://huggingface.co/blog/google-cloud-partnership-2024",
+      "date": "2024-03-20",
       "domain": "huggingface.co"
+    },
+    {
+      "title": "NVIDIA、次世代AIチップアーキテクチャ「Blackwell」を発表",
+      "summary": "NVIDIAは年次イベントGTC 2024で、次世代のAIチップアーキテクチャ「Blackwell」を発表しました。Blackwellは、推論と学習の両面で飛躍的な性能向上を達成し、テラバイト級のAIモデルに対応できるよう設計されています。これはデータセンターAIの未来を形作る画期的な進展です。",
+      "source": "nvidia.com",
+      "url": "https://www.nvidia.com/ja-jp/news/blackwell-platform/",
+      "date": "2024-03-18",
+      "domain": "www.nvidia.com"
+    },
+    {
+      "title": "EU、世界初の包括的なAI規制法「EU AI Act」に最終合意",
+      "summary": "欧州連合EUは、世界初の包括的なAI規制法である「EU AI Act」に最終合意しました。この法律は、AIシステムのリスクレベルに応じて厳格な規制を課し、市民の権利保護とイノベーションのバランスを目指します。ITエンジニアは、この規制を遵守するための開発プロセスや倫理的考慮が求められます。",
+      "source": "europarl.europa.eu",
+      "url": "https://www.europarl.europa.eu/news/en/press-room/20240308IPR19015/artificial-intelligence-act-meps-adopt-pioneering-law-on-ai",
+      "date": "2024-03-13",
+      "domain": "www.europarl.europa.eu"
+    },
+    {
+      "title": "Cognition AIがAIソフトウェアエンジニア「Devin」を発表",
+      "summary": "Cognition AIは、自律的にソフトウェア開発タスクを実行でるAIソフトウェアエンジニア「Devin」を発表しました。Devinは、コード記述、バグ修正、新しい機能の実装まで、人間のエンジニアが行う一連の作業を自動化できるとされ、ソフトウェア開発の生産性を大きく向上させる可能性があります。",
+      "source": "cognition-labs.com",
+      "url": "https://www.cognition-labs.com/blog/introducing-devin",
+      "date": "2024-03-12",
+      "domain": "www.cognition-labs.com"
+    },
+    {
+      "title": "Anthropic、次世代モデル「Claude 3」シリーズを発表",
+      "summary": "Anthropicは、新たな大規模言語モデル「Claude 3」シリーズを発表しました。Opus、Sonnet、Haikuの3モデルから構成され、OpusはGPT-4を上回る性能を謳っています。画像入力に対応するマルチモーダル機能も強化され、複雑な推論や長いコンテキスト理解能力が向上しています。",
+      "source": "anthropic.com",
+      "url": "https://www.anthropic.com/news/claude-3-family",
+      "date": "2024-03-04",
+      "domain": "www.anthropic.com"
+    },
+    {
+      "title": "Mistral AI、高性能LLM「Mistral Large」とMicrosoftとの提携を発表",
+      "summary": "フランスのスタートアップMistral AIは、最新の高性能大規模言語モデル「Mistral Large」を発表しました。同時に、Microsoftとの提携も発表され、Mistral LargeがMicrosoft Azure AIプラットフォームを通じて利用可能になります。これは欧州AIの勢いを示す動きとして注目されています。",
+      "source": "mistral.ai",
+      "url": "https://mistral.ai/news/mistral-large/",
+      "date": "2024-02-26",
+      "domain": "mistral.ai"
+    },
+    {
+      "title": "Meta Reality Labs、AR/VRデバイス向けAI研究の進展を発表",
+      "summary": "MetaのReality Labsは、拡張現実ARおよび仮想現実VRデバイスにおけるAI研究の最新成果を公開しました。特に、視覚と音声の情報を統合してリアルタイムで周囲の環境を理解する「Project Aria」の進展や、AIが自然なジェスチャーを生成する研究などが含まれ、没入型体験の進化に貢献します。",
+      "source": "tech.meta.com",
+      "url": "https://tech.meta.com/ai/",
+      "date": "2024-02-26",
+      "domain": "tech.meta.com"
+    },
+    {
+      "title": "Stability AI、画像生成モデルの次世代版「Stable Diffusion 3」を発表",
+      "summary": "Stability AIは、オープンソースの画像生成モデル「Stable Diffusion 3」を発表しました。このモデルは、複雑なプロンプトの理解度、画像品質、テキスト生成能力が大幅に向上しています。多様なクリエイティブ用途への適用が期待され、AI生成コンテンツの質をさらに高めます。",
+      "source": "stability.ai",
+      "url": "https://stability.ai/news/stable-diffusion-3",
+      "date": "2024-02-22",
+      "domain": "stability.ai"
+    },
+    {
+      "title": "OpenAI、テキストから動画を生成するAIモデル「Sora」を発表",
+      "summary": "OpenAIは、テキストプロンプトからリアルで複雑なシーンを含む高品質な動画を生成できる新しいAIモデル「Sora」を発表しました。最長1分間の動画を生成可能で、物理世界の理解と動きの再現において画期的な能力を示しています。これにより、動画コンテンツ制作に大きな変化がもたらされる可能性があります。",
+      "source": "openai.com",
+      "url": "https://openai.com/sora",
+      "date": "2024-02-15",
+      "domain": "openai.com"
+    },
+    {
+      "title": "Google ChromeにGeminiが統合、ブラウザでのAI機能が強化",
+      "summary": "Googleは、Webブラウザ「Google Chrome」にAIアシスタント「Gemini」の機能を統合すると発表しました。これにより、ユーザーはブラウザ内で直接、ページの要約、テキスト生成、情報検索など、より高度なAIアシスタント機能を利用できるようになります。",
+      "source": "blog.google",
+      "url": "https://blog.google/products/chrome/gemini-chrome-updates/",
+      "date": "2024-01-25",
+      "domain": "blog.google"
     }
   ],
-  "lastUpdated": "2025-06-06T03:21:13.386Z"
+  "lastUpdated": "2025-06-06T03:30:33.869Z"
 }
