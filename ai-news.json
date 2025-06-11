@@ -1,165 +1,165 @@
 {
   "items": [
     {
-      "title": "Apple Intelligence発表パーソナルAIがデバイスに深く統合",
-      "summary": "AppleがWWDC 2024で「Apple Intelligence」を発表しました。これは、iOS、iPadOS、macOSに深く統合されるパーソナルなインテリジェンスシステムで、Siriの強化、書き換えツール、画像生成など、プライバシーに配慮しつつユーザーの体験を向上させます。また、ChatGPTとの連携も発表され、必要に応じてクラウド上のChatGPTモデルを利用可能になります。",
+      "title": "**最も重要と思われるニュースの選定:**",
+      "summary": "AppleがWWDC 2024で、プライバシーを重視したAIシステム「Apple Intelligence」を発表しました。これは、Siriの大な進化、アプリ間の連携強化、Writing Tools、Image Playgroundなど、OSレベルでの生成AI機能を提供します。プライベートクラウドコンピューティングの概念も導入し、ユーザーのデバイス上で処理しきれない複雑なタスクは、Appleシリコン搭載の専用サーバーで安全に処理されることで、パーソナルなAI体験を再定義します。",
       "source": "apple.com",
-      "url": "https://www.apple.com/jp/newsroom/2024/06/introducing-apple-intelligence/",
+      "url": "https://www.apple.com/jp/newsroom/2024/06/introducing-apple-intelligence-our-personal-intelligence-system/",
       "date": "2024-06-10",
       "domain": "www.apple.com"
     },
     {
-      "title": "Microsoft Copilot+ PC発表AI専用NPU搭載の次世代Windows PC",
-      "summary": "Microsoftは、AI処理専用のニューラルプロセッシングユニットNPUを搭載した新しいWindows PCカテゴリ「Copilot+ PC」を発表しました。これにより、デバイス上でAI機能を高速かつ効率的に実行できるようになり、生成AI機能を活用した「Recall」や「Cocreator」などの新機能が導入されます。ハードウェアとAIの統合を加速させる戦略です。",
+      "title": "**タイトル: EU AI Act、世界初の包括的なAI規制法として最終承認**",
+      "summary": "欧州連合EUは、リスクベースのアプローチを採用した世界初の包括的なAI規制法「EU AI Act」を最終承認しました。これにより、AIシステムの開発・利用における透明性、安全性、倫理的配慮が義務付けられ、高リスクAIには厳格な要件が課せられます。この法律は、グローバルなAI規制のベンチマークとなる可能性があり、AI開発者や企業に大きな影響を与えます。",
+      "source": "consilium.europa.eu",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2024/05/21/artificial-intelligence-act-council-gives-its-final-approval/",
+      "date": "2024-05-21",
+      "domain": "www.consilium.europa.eu"
+    },
+    {
+      "title": "**タイトル: Microsoft、AIを搭載した次世代PC「Copilot+ PC」とWindows AI機能を発表**",
+      "summary": "MicrosoftはBuild 2024で、AI処理に特化したNPUを内蔵した「Copilot+ PC」を発表しました。これには、Windows上で動作するオフラインAI機能として「Recall」過去の操作履歴を検索や「Cocreator」画像生成などが搭載されます。これにより、WindowsエコシステムにおけるAIの活用が大幅に強化され、開発者もAIネイティブなアプリケーションを構築する新たな機会が生まれます。",
       "source": "news.microsoft.com",
-      "url": "https://news.microsoft.com/ja-jp/2024/05/21/240521-microsoft-introduces-copilot-pcs/",
+      "url": "https://news.microsoft.com/ja-jp/2024/05/21/240521-microsoft-copilot-pcs-signal-new-era-of-windows-and-ai/",
       "date": "2024-05-20",
       "domain": "news.microsoft.com"
     },
     {
-      "title": "Google Project AstraとGeminiの新機能リアルタイム対話型AIの進化",
-      "summary": "Google I/O 2024で、GoogleはリアルタイムかつマルチモーダルなAIアシスタント「Project Astra」のデモを披露し、Geminiモデルの進化を発表しました。Geminiは、大規模なコンテキストウィンドウ、音声や動画への対応を強化し、より自然で柔軟な対話が可能になることを示しました。AI検索の導入や、AIエージェントの開発も進められています。",
+      "title": "**タイトル: Google I/O 2024で「Project Astra」やGeminiの進化を発表**",
+      "summary": "GoogleはI/O 2024で、AIエージェントの未来を示す「Project Astra」を披露し、視覚と音声によるリアルタイム対話能力を強調しました。また、Geminiモデルは機能強化され、新たにImagen 3画像生成やVeo動画生成といった生成AIモデルも発表されました。これにより、GoogleはマルチモーダルAIとエージェントAIの開発を加速させる姿勢を示しています。",
       "source": "blog.google",
       "url": "https://blog.google/technology/ai/google-gemini-project-astra-io-2024/",
       "date": "2024-05-14",
       "domain": "blog.google"
     },
     {
-      "title": "OpenAI GPT-4o発表リアルタイム・マルチモーダルAIの新時代へ",
-      "summary": "OpenAIは、テキスト、音声、画像をリアルタイムで処理できる新しいフラッグシップモデル「GPT-4o」を発表しました。これは非常に高速な応答と、感情認識や複数の話者の理解といった高度な機能を備えており、一部の機能は無料で提供されます。AIの利用が音声インターフェーや複合的なタスクへと大きく広がる可能性を示しています。",
+      "title": "**タイトル: OpenAI、高速でマルチモーダルな新モデル「GPT-4o」を発表**",
+      "summary": "OpenAIはSpring Updateイベントで、新たなフラッグシップモデル「GPT-4o」\"omni\"の略を発表しました。このモデルは、テキスト、音声、画像入力に対応し、より高速かつ自然な対話が可能です。特に音声応答は人間の会話のような遅延で実現され、デスクトップアプリのリリースと合わせて、より多くのユーザーにAIが身近になることを示唆しています。",
       "source": "openai.com",
       "url": "https://openai.com/index/hello-gpt-4o/",
       "date": "2024-05-13",
       "domain": "openai.com"
     },
     {
-      "title": "Meta Llama 3公開オープンソースLLMの性能と透明性を向上",
-      "summary": "Metaは、オープンソースの大規模言語モデルLLMの最新版「Llama 3」を公開しました。このモデルは、既存のLlama 2よりも性能が大幅に向上し、より幅広いタスクに対応できるようになったとされています。オープンソース戦略を強化し、AI開発コミュニティへの貢献と透明性の向上を目指しています。",
+      "title": "**タイトル: Google DeepMind、「AlphaFold 3」で生体分子モデリングの新たなブレークスルー**",
+      "summary": "Google DeepMindとIsomorphic Labsは、タンパク質、DNA、RNA、リガンド、イオンなど、あらゆる生体分子の構造と相互作用を予測できる「AlphaFold 3」を発表しました。この技術は、創薬や生物学研究に革命をもたらす可能性があり、より効率的な新薬開発や疾病理解に貢献することが期待されます。",
+      "source": "deepmind.google",
+      "url": "https://deepmind.google/discover/blog/alphafold-3-reshaping-life-sciences-research/",
+      "date": "2024-05-08",
+      "domain": "deepmind.google"
+    },
+    {
+      "title": "**タイトル: GitHub Copilot Workspaceを発表、AIが開発ワークフロー全体を支援**",
+      "summary": "GitHubは、AIがソフトウェア開発の初期段階からデバッグ、テスト、デプロイまで、ワークフロー全体を支援する「GitHub Copilot Workspace」を発表しました。これにより、開発者はアイデアから実行まで、AIの力を借りてより効率的にコーディングできるようになり、生産性向上に貢献します。",
+      "source": "github.blog",
+      "url": "https://github.blog/2024-04-29-introducing-github-copilot-workspace/",
+      "date": "2024-04-29",
+      "domain": "github.blog"
+    },
+    {
+      "title": "**タイトル: AI倫理・安全に関する国際的な議論が加速、ソウルAIサミット開催へ**",
+      "summary": "AIの急速な発展に伴い、その安全性と倫理的なガバナンスに関する国際的な議論が活発化しています。主要国政府や研究機関が連携し、リス評価、透明性、説明可能性などの原則を定める動きが加速しており、2024年にはAI Safety Summitがソウルで開催されるなど、国際的な協力体制の構築が進んでいます。",
+      "source": "mittechnologyreview.jp",
+      "url": "https://mittechnologyreview.jp/2024/04/23/2024-ai-safety-summit-seoul-preparations/",
+      "date": "2024-04-23 (記事日付、議論は継続的)",
+      "domain": "mittechnologyreview.jp"
+    },
+    {
+      "title": "**タイトル: Meta、オープンソースLLM「Llama 3」と画像生成AIを発表**",
+      "summary": "Metaは、オープンソースの大規模言語モデルLLMの最新版「Llama 3」を発表しました。8Bと70Bの2つのモデルが公開され、コード生成や多言語対応の性能が向上しています。また、テキストから画像を生成する機能も公開し、オープンソースAIコミュニティへの貢献とAI開発の加速を目指しています。",
       "source": "ai.meta.com",
       "url": "https://ai.meta.com/blog/meta-llama-3/",
       "date": "2024-04-18",
       "domain": "ai.meta.com"
     },
     {
-      "title": "NVIDIA Blackwellプラットフォーム発表次世代AIスーパーチップが登場",
-      "summary": "NVIDIAはGTC 2024で、AIデータセンター向けの次世代GPUアーキテクチャ「Blackwell」を発表しました。Hopperの後継となるこのプラットフォームは、数兆パラメータ規模のAIモデルのトレーニングと推論を高速化するために設計され、GH200の後継となるGB200スーパーチップなど、AIの進化を支えるハードウェア基盤を提供します。",
+      "title": "**タイトル: Mistral AI、大規模オープンソースモデル「Mixtral 8x22B」をリリー**",
+      "summary": "フランスのAIスタートアップMistral AIは、大規模なオープンソース言語モデル「Mixtral 8x22B」をリリースしました。このモデルは、Mixture-of-Experts (MoE) アーキテクチャを採用しており、高い性能を維持しつつ、効率的な推論を実現します。オープンソースLLMエコシステムにおける競争をさらに激化させ、新たな開発の波を促しています。",
+      "source": "mistral.ai",
+      "url": "https://mistral.ai/news/mixtral-8x22b/",
+      "date": "2024-04-10",
+      "domain": "mistral.ai"
+    },
+    {
+      "title": "**タイトル: NVIDIA、AI推論・学習向け次世代GPUアーキテクチャ「Blackwell」を発表**",
+      "summary": "NVIDIAはGTC 2024で、AIワークロードに特化した次世代GPUアーキテクチャ「Blackwell」を発表しました。これにより、AIモデルの学習と推論性能が大幅に向上し、HBM3eメモリの採用や、大規模AIスーパーコンピュータを構築するための新技術が導入されます。AIハードウェアの性能向上は、AI技術のさらなる発展を支える基盤となります。",
       "source": "nvidia.com",
-      "url": "https://www.nvidia.com/ja-jp/news/blackwell-architecture/",
+      "url": "https://www.nvidia.com/ja-jp/data-center/blackwell-platform/",
       "date": "2024-03-18",
       "domain": "www.nvidia.com"
     },
     {
-      "title": "Anthropic Claude 3ファミリー公開高性能マルチモーダルLLMが登場",
-      "summary": "Anthropicは、新たな大規模言語モデル「Claude 3」ファミリーOpus、Sonnet、Haikuを発表しました。特に最上位モデルのOpusは、高度な推論、コーディング、マルチモーダル能力においてGPT-4やGemini Ultraを上回る性能を示しています。より複雑なビジネス用途や開発者向けに設計されています。",
+      "title": "**タイトル: Microsoft、Security Copilotの一般提供を開始し、AIがサイバーセキュリティを強化**",
+      "summary": "Microsoftは、生成AIを活用したセキュリティソリューション「Microsoft Security Copilot」の一般提供を開始しました。これは、セキュリティアナリストが脅威を特定し、対応策を講じるのを支援することで、サイバーセキュリティの効率と効果を大幅に向上させます。AIが企業のセキュリティ体制を強化する重要な一歩となります。",
+      "source": "microsoft.com",
+      "url": "https://www.microsoft.com/en-us/security/business/ai-security",
+      "date": "2024-03-13",
+      "domain": "www.microsoft.com"
+    },
+    {
+      "title": "**タイトル: Anthropic、高性能LLM「Claude 3」ファミリーを発表Opus, Sonnet, Haiku**",
+      "summary": "Anthropicは、新しい大規模言語モデルファミリー「Claude 3」を発表しました。Opus、Sonnet、Haikuの3つのモデルがあり、Opusは最上位モデルで、画像認識能力を含む高い推論性能を誇ります。このリリースは、既存のLLM市場に新たな強力な競合をもたらし、AIの能力の限界を押し上げています。",
       "source": "anthropic.com",
       "url": "https://www.anthropic.com/news/claude-3-family",
       "date": "2024-03-04",
       "domain": "www.anthropic.com"
     },
     {
-      "title": "Figure AIがOpenAIと提携し、ヒューマノイドロボットにLLMを統合",
-      "summary": "ヒューマノイドロボット開発企業のFigure AIが、OpenAIとパートナーシップを結び、ロボットにOpenAIのLLMを統合すると発表しました。これにより、Figureのロボットはより高度な推論と自然言語理解能力を獲得し、複雑なタスクを自律的にこなすことが期待されます。ロボットとAIの融合が加速する一歩となります。",
-      "source": "techcrunch.com",
-      "url": "https://techcrunch.com/2024/02/29/figure-ai-raises-675m-from-bezos-nvidia-intel-amazon-microsoft-and-openai/",
+      "title": "**タイトル: Figure AI、OpenAIとの提携で人型ロボット開発を加速**",
+      "summary": "人型ロボット開発を手がけるFigure AIは、OpenAIとの提携を発表し、OpenAIの技術をFigureのロボット統合することを目指します。これにより、人型ロボットがより高度な推論と対話能力を獲得し、多様なタスクを自律的に実行できるようになることが期待されます。ロボティクスとAIの融合が加速する兆候です。",
+      "source": "figure.ai",
+      "url": "https://www.figure.ai/news/figure-raises-675m-from-leading-investors-including-microsoft-and-nvidia",
       "date": "2024-02-29",
-      "domain": "techcrunch.com"
+      "domain": "www.figure.ai"
     },
     {
-      "title": "OpenAI Sora発表テキストから高画質ビデオを生成するAIモデル",
-      "summary": "OpenAIは、テキストプロンプトから最大1分間のリアルな動画を生成できるAIモデル「Sora」を発表しました。物理世界を理解し、その動きを模倣する能力を持つSoraは、映画制作、コンテンツクリエーション、シミュレーションなど、多様な分野に大きな影響を与える可能性を秘めています。",
+      "title": "**タイトル: AI関連職の需要と高給化が顕著に、エンジニアに新たな機会**",
+      "summary": "AI技術の急速な進化に伴い、AI関連職種の需要が大幅に増加しており、特にAIエンジニアやMLエンジニアの給与水準が高騰しています。これは、企業がAIを活用した製品やサービスの開発に注力していることを示しており、ITエンジニアにとってAIスキルを習得することがキャリアアップに繋がる新たな機会となっています。",
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2024/02/20/ai-related-jobs-pay-six-figure-salaries-some-offer-millions.html",
+      "date": "2024-02-20",
+      "domain": "www.cnbc.com"
+    },
+    {
+      "title": "**タイトル: OpenAI、テキストから動画を生成するAIモデル「Sora」を公開**",
+      "summary": "OpenAIは、テキストプロンプトからリアルで複雑な動画を生成できる画期的なAIモデル「Sora」を公開ました。Soraは、複数のキャラクター、特定の種類の動き、主題と背景の詳細を含む複雑なシーンを生成する能力を持ち、動画コンテンツ制作の未来を大きく変える可能性を秘めています。",
       "source": "openai.com",
       "url": "https://openai.com/sora",
       "date": "2024-02-15",
       "domain": "openai.com"
     },
     {
-      "title": "Google Gemini 1.5 Pro発表100万トークンの大規模コンテキストウィンドウを搭載",
-      "summary": "Googleは、新しい中間モデル「Gemini 1.5 Pro」を発表し、最大100万トークンという画期的なコンテキストウィンドウを提供すると述べました。これにより、非常に長いドキュメントや複数の動画、大量のコードベースなどを一度に処理・分析することが可能になり、開発者にとって新たなアプリケーションの可能性が広がります。",
+      "title": "**タイトル: Google、Gemini 1.5 Proのコンテキストウィンドウを100万トークンに拡大**",
+      "summary": "Googleは、Gemini 1.5 Proモデルのコンテキストウィンドウを、業界をリードする100万トークンに拡大したことを発表しました。これにより、モデルは非常に長いドキュメント、コードベース全体、あるいは長時間の動画の内容を一度に処理できるようになり、複雑なタスクや詳細な分析におけるLLMの応用範囲を劇的に広げます。",
       "source": "blog.google",
-      "url": "https://blog.google/technology/ai/gemini-next-generation-model-google-deepmind/",
+      "url": "https://blog.google/technology/ai/google-gemini-next-generation-model-gemini-1-5-pro/",
       "date": "2024-02-15",
       "domain": "blog.google"
     },
     {
-      "title": "IntelがGaudi3 AIアクセラレーターを発表高性能AIチッ市場に本格参入",
-      "summary": "Intelは、AIワークロードに特化した新しいAIアクセラレーター「Gaudi3」を発表しました。NVIDIAのH100に対抗する性能を目指しており、AIトレーニングと推論の両方で高い効率とパフォーマンスを提供すると主張しています。AIチップ市場での競争がさらに激化することが予想されます。",
-      "source": "intel.com",
-      "url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-ai-everywhere-gaudi3-announcement.html",
-      "date": "2023-12-14",
-      "domain": "www.intel.com"
+      "title": "**タイトル: LLMにおけるRAG (Retrieval Augmented Generation) の重要性とその進化**",
+      "summary": "大規模言語モデルLLMの応用において、外部知識を動的に参照するRAG (Retrieval Augmented Generation) の重要性が高まっています。RAGは、モデルが最新の情報や専門分野の知識にクセスし、幻覚hallucinationを減らすことを可能にし、エンタープライズ分野でのLLM導入における主要なアーキテクチャパターンとなっています。",
+      "source": "datacamp.com",
+      "url": "https://www.datacamp.com/blog/retrieval-augmented-generation-rag-in-llms",
+      "date": "2024-01-26",
+      "domain": "www.datacamp.com"
     },
     {
-      "title": "Mistral AIが大型資金調達オープンソースAIの有力株として急浮上",
-      "summary": "フランスのAIスタートアップMistral AIが、約4億8,700万ドルの大型資金調達を実施し、評価額が20億ドルに達したと報じられました。同社はオープンソースの大規模言語モデルの開発に注力しており、その高性能なモデルは開発コミュニティから高い評価を受けています。グローバルなAIエコシステムにおける重要なプレイヤーとして注目されています。",
+      "title": "**タイトル: オンデバイスAI/エッジAIの進化とIntel Core Ultraプロセッサの登場**",
+      "summary": "AI処理をクラウドだけでなくデバイス上で行うオンデバイスAIエッジAIの重要性が増しており、IntelはNPUNeural Processing Unitを内蔵したCore Ultraプロセッサを発表しました。これにより、PCやスマートフォンなどのエンドデバイスでAI機能がより高速かつプライベートに実行可能となり、開発者には新たなアプリケーションの機会が生まれています。",
+      "source": "theverge.com",
+      "url": "https://www.theverge.com/2024/1/8/24022830/intel-ces-2024-core-ultra-processors-ai-pcs-npu",
+      "date": "2024-01-08",
+      "domain": "www.theverge.com"
+    },
+    {
+      "title": "**タイトル: AIエージェント研究の加速と今後の展望**",
+      "summary": "大規模言語モデルを基盤としたAIエージェントの研究開発が急速に進んでいます。これらは自律的に目標を設定し、計画を立て、ツールを使い、タスクを実行できる能力を持ち、ソフトウェア開発、データ分析、カスタマーサービスなど、多岐にわたる分野での応用が期待されています。MicrosoftのAutoGenのようなフレームワークの登場がその普及を後押ししています。",
       "source": "techcrunch.com",
-      "url": "https://techcrunch.com/2023/12/10/mistral-ai-raises-over-487m-at-a-2b-valuation/",
-      "date": "2023-12-10",
-      "domain": "techcrunch.com"
-    },
-    {
-      "title": "EU AI Act合意世界初の包括的なAI規制法案が成立へ",
-      "summary": "欧州連合EU立法者たちは、世界で初めてとなる包括的なAI規制法案「AI Act」について合意に達しました。この法案は、AIシステムのリスクレベルに応じて厳格な要件を課し、高リスクAIシステムには特に厳しい基準が適用されます。AIの倫理的かつ責任ある開発・利用を促進することを目指します。",
-      "source": "europarl.europa.eu",
-      "url": "https://www.europarl.europa.eu/news/en/press-room/20231206IPR15699/eu-parliament-and-council-reach-deal-on-ai-act",
-      "date": "2023-12-08",
-      "domain": "www.europarl.europa.eu"
-    },
-    {
-      "title": "AWS Bedrockでカスタムモデルトレーニング機能が一般提供開始",
-      "summary": "Amazon Web Services (AWS) は、生成AIサービス「Amazon Bedrock」において、ユーザーが独自のデータで基盤モデルをファインチューニングできるカスタムモデルトレーニング機能の一般提供を開始しました。これにより、企業は特定の業界やビジネスニーズに合わせたAIモデルを容易に構築・デプロイできるようになります。",
-      "source": "aws.amazon.com",
-      "url": "https://aws.amazon.com/blogs/aws/now-in-amazon-bedrock-train-fine-tune-and-continue-training-models/",
-      "date": "2023-11-28",
-      "domain": "aws.amazon.com"
-    },
-    {
-      "title": "Microsoft Azure AI Studio発表生成AI開発を加速する統合プラットフォーム",
-      "summary": "Microsoftは、生成AIアプリケーションの開発を加速するための統合プラットフォーム「Azure AI Studio」を発表しました。このツールは、基盤モデルの選択、カスタマイズ、デプロイ、管理までを単一の環境で実現し、開発者がより効率的にAIソリューションを構築できるよう支援します。",
-      "source": "azure.microsoft.com",
-      "url": "https://azure.microsoft.com/en-us/blog/microsoft-unveils-new-ai-innovations-at-microsoft-ignite/",
-      "date": "2023-11-15",
-      "domain": "azure.microsoft.com"
-    },
-    {
-      "title": "OpenAI DevDayでGPT-4 Turbo、Custom GPTs、Assistants APIを発表",
-      "summary": "OpenAI初の開発者向けイベント「DevDay」で、新しいモデル「GPT-4 Turbo」、ユーザーが独自のAIボットを作成できる「Custom GPTs」、そしてより複雑な対話アプリケーション開発を容易にする「Assistants API」など、多数の新機能が発表されました。これは開発者エコシステムへの大規模な投資を示しています。",
-      "source": "openai.com",
-      "url": "https://openai.com/blog/new-models-and-developer-products-announced-at-devday",
-      "date": "2023-11-06",
-      "domain": "openai.com"
-    },
-    {
-      "title": "Google DeepMindとISMRMがAIでMRIスキャンを高速化",
-      "summary": "Google DeepMindは、国際磁気共鳴医学会ISMRMと協力し、AIを活用してMRIスキャン時間を最大4分の1に短縮し、同時に画質を向上させる技術を発表しました。この進歩は、患者の負担軽減と医療画像診断の効率化に大きく貢献すると期待されています。",
-      "source": "deepmind.google",
-      "url": "https://deepmind.google/blog/ai-improves-mri-scans-and-shortens-scanning-time/",
-      "date": "2023-10-23",
-      "domain": "deepmind.google"
-    },
-    {
-      "title": "Google Med-PaLM 2の評価発表医療分野特化型LLMの可能性",
-      "summary": "Googleは、医療分野に特化した大規模言語モデル「Med-PaLM 2」の詳細な評価結果を発表しました。このモデルは、臨床試験の質問応答において、医師レベルの精度に匹敵する性能を示し、医療現場でのAI活用に向けた大きな一歩となります。",
-      "source": "deepmind.google",
-      "url": "https://deepmind.google/blog/med-palm-2-and-our-next-steps-in-ai-for-health/",
-      "date": "2023-08-08",
-      "domain": "deepmind.google"
-    },
-    {
-      "title": "DatabricksがMosaicMLを買収オープンソースLLM開発を強化",
-      "summary": "データとAIの企業Databricksが、オープンソースの大規模言語モデルLLMのトレーニングを支援するプラットフォームを提供するMosaicMLを13億ドルで買収しました。この買収により、Databricksは企業が独自のAIモデルを構築・デプロイするための能力を大幅に強化します。",
-      "source": "databricks.com",
-      "url": "https://databricks.com/newsroom/databricks-acquires-mosaicml-for-1-3-billion",
-      "date": "2023-06-26",
-      "domain": "databricks.com"
-    },
-    {
-      "title": "RunwayML Gen-2発表テキストからビデオ生成の新たな進化",
-      "summary": "テキストや画像から動画を生成するAIプラットフォームRunwayMLは、より高精度な動画生成モデル「Gen-2」を発表しました。これにより、より複雑なプロンプトや画像参照からの動画生成が可能になり、クリエイティブ業界におけるAI活用の可能性を広げています。",
-      "source": "runwayml.com",
-      "url": "https://runwayml.com/blog/introducing-gen-2-text-to-video/",
-      "date": "2023-06-21",
-      "domain": "runwayml.com"
+      "url": "https://www.techcrunch.com/2023/10/26/microsofts-autogen-offers-a-way-to-build-autonomous-ai-agents-that-collaborate/",
+      "date": "2023-10-26",
+      "domain": "www.techcrunch.com"
     }
   ],
-  "lastUpdated": "2025-06-10T00:45:46.799Z"
+  "lastUpdated": "2025-06-11T00:46:02.989Z"
 }
