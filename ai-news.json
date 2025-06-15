@@ -1,4 +1,165 @@
 {
-  "items": [],
-  "lastUpdated": "2025-06-14T00:44:26.059Z"
+  "items": [
+    {
+      "title": "Anthropicが高速かつ高性能なClaude 3.5 Sonnetを発表",
+      "summary": "Anthropicは最新のAIモデル「Claude 3.5 Sonnet」を公開した。従来のOpusモデルよりも高速で、特定のベンチマークではより優れた性能を示し、ビジョン能力も向上している。この新モデルは、より幅広いアプリケーションでの利用が期待される。",
+      "source": "anthropic.com",
+      "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+      "date": "2024-06-20",
+      "domain": "www.anthropic.com"
+    },
+    {
+      "title": "Apple Intelligence発表、iPhone/MacにAIを深く統合",
+      "summary": "AppleがWWDCで生成AIシステム「Apple Intelligence」を発表し、Siriの強化、画像生成、文章作成支援などをOSレベルで提供する。プライバシーを重視し、オンデバイス処理とPrivate Cloud Computeを組み合わせることで、ユーザー体験を根本から変えることを目指す。",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2024/06/10/apple-announces-apple-intelligence-its-on-device-and-cloud-based-ai-system/",
+      "date": "2024-06-10",
+      "domain": "techcrunch.com"
+    },
+    {
+      "title": "NVIDIA、次世代AIプラットフォーム「Rubin」を発表",
+      "summary": "NVIDIAはComputex 2024で、Blackwellに続く次世代AIプラットフォーム「Rubin」を発表した。2026年登場を予定しており、より高性能なGPUとVersa CUBEアーキテクチャを特徴とする。これにより、AIインフラの進化がさらに加速される見込みだ。",
+      "source": "nvidia.com",
+      "url": "https://www.nvidia.com/ja-jp/news/computex/",
+      "date": "2024-06-02",
+      "domain": "www.nvidia.com"
+    },
+    {
+      "title": "AWSがAmazon Bedrockのモデル価格を大幅値下げ",
+      "summary": "Amazon Web Servicesが、生成AIサービスAmazon Bedrockで提供される主要モデルの推論価格を最大50%以上値下げした。これにより、AIアプリケーションの開発・運用コストが削減され、より多くの企業が生成AIを利用しやすくなることが期待される。",
+      "source": "aws.amazon.com",
+      "url": "https://aws.amazon.com/jp/blogs/news/new-pricing-for-claude-3-haiku-sonnet-and-opus-on-amazon-bedrock/",
+      "date": "2024-05-30",
+      "domain": "aws.amazon.com"
+    },
+    {
+      "title": "Microsoft Copilot+ PC発表、Recall機能でプライバシー懸念",
+      "summary": "MicrosoftはAIを統合した新しいPC「Copilot+ PC」を発表した。特にRecall」機能はPCの活動を記録し検索可能にするものだが、プライバシーとセキュリティに関する大きな懸念が浮上し、Microsoftは改善を約束した。",
+      "source": "blogs.microsoft.com",
+      "url": "https://blogs.microsoft.com/blog/2024/05/20/introducing-copilot-pcs/",
+      "date": "2024-05-20",
+      "domain": "blogs.microsoft.com"
+    },
+    {
+      "title": "OpenAI、スーパーアラインメントチーム解散と安全性の再編",
+      "summary": "OpenAIが長期的なAIの安全性に取り組む「スーパーアラインメントチーム」を解散し、そのメンバーを研究や安全関連の他のチームに統合すると発表した。これはAIの安全性アプローチにおける方針転換を示すものであり、コミュニティ内で議論を呼んでいる。",
+      "source": "reuters.com",
+      "url": "https://www.reuters.com/technology/openai-disbands-superalignment-team-tasked-controlling-potentially-risky-ai-2024-05-17/",
+      "date": "2024-05-17",
+      "domain": "www.reuters.com"
+    },
+    {
+      "title": "Google I/O 2024でGeminiの進化と検索体験のAI統合を発表",
+      "summary": "GoogleはI/OでGeminiモデルの進化と、検索体験にAIを深く統合する新しい機能「AI Overview (旧SGE)」を発表した。また、Project AstraとしてAIエージェントの進捗も示し、ユーザーとより自然に対話できる未来のAIアシスタント像を提示した。",
+      "source": "blog.google",
+      "url": "https://blog.google/technology/ai/google-io-2024-gemini-ai-developers/",
+      "date": "2024-05-14",
+      "domain": "blog.google"
+    },
+    {
+      "title": "OpenAI、高速マルチモーダルモデル「GPT-4o」を発表",
+      "summary": "OpenAIが新しいフラッグシップモデル「GPT-4o」を公開した。「o」は「omni」を意味し、テキスト、音声、画像をリアルタイムで処理できるマルチモーダル能力を持つ。これにより、より自然な対話と高速な応答を実現し、AIとのインタラクションを次のレベルへと引き上げる。",
+      "source": "openai.com",
+      "url": "https://openai.com/index/hello-gpt-4o/",
+      "date": "2024-05-13",
+      "domain": "openai.com"
+    },
+    {
+      "title": "AI PCの市場拡大が予測、MicrosoftとQualcommがリード",
+      "summary": "市場調査会社は、2024年以降にAI機能を内蔵した「AI PC」の出荷台数が急速に伸びると予測している。特にMicrosoftとQualcommがArmベースのSoCでこの分野をリードし、オンデバイスAIの普及を後押しすることで、PC市場に新たな波をもたらす。",
+      "source": "reuters.com",
+      "url": "https://www.reuters.com/technology/microsoft-qualcomm-lead-charge-new-ai-pcs-2024-05-09/",
+      "date": "2024-05-09",
+      "domain": "www.reuters.com"
+    },
+    {
+      "title": "Databricks、AIデータ品質改善のLilacを傘下に",
+      "summary": "Databricksが、非構造化データに対するデータ品質分析ツールを提供するスタートアップLilacを買収した。これにより、DatabricksはLLM開発におけるデータ選別と品質向上能力を強化し、より高性能なAIモデル構築を支援する。",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2024/05/07/databricks-acquires-lilac-for-unstructured-data-quality/",
+      "date": "2024-05-07",
+      "domain": "techcrunch.com"
+    },
+    {
+      "title": "Google DeepMind、汎用AIエージェントに向けた新研究発表",
+      "summary": "Google DeepMindが、大規模なデータと計算能力を活用し、より汎用的な能力を持つAIエージェントの開発に関する新たな研究成果を公開した。これは、多様なタスクを自律的にこなせるAIの実現に向けた一歩となり、AI開発の未来を大きく左右する可能性を秘めている。",
+      "source": "deepmind.google",
+      "url": "https://deepmind.google/discover/blog/introducing-deepmind-s-new-research-into-autonomous-agents/",
+      "date": "2024-04-25",
+      "domain": "deepmind.google"
+    },
+    {
+      "title": "AdobeがCreative Cloud製品に生成AI機能を拡充",
+      "summary": "AdobeはPhotoshop、Illustrator、Premiere ProなどのCreative Cloud製品に生成AI機能「Firefly」の統合をさらに進めた。これにより、クリエイターはより迅速かつ効率的にコンテンツを生成・編集できるようになり、創造性の可能性を広げる。",
+      "source": "news.adobe.com",
+      "url": "https://news.adobe.com/news/adobe-firefly-updates-creative-cloud",
+      "date": "2024-04-23",
+      "domain": "news.adobe.com"
+    },
+    {
+      "title": "Metaが次世代大規模言語モデル「Llama 3」をオープンソース公開",
+      "summary": "Metaは自社の最新の大規模言語モデル「Llama 3」を発表し、オープンソースとして公した。これは、より強力な性能を持ち、開発者が自由に利用・カスタマイズできるため、AIエコシステムに大きな影響を与え、オープンAI研究を加速させる。",
+      "source": "ai.meta.com",
+      "url": "https://ai.meta.com/blog/meta-llama-3/",
+      "date": "2024-04-18",
+      "domain": "ai.meta.com"
+    },
+    {
+      "title": "生成AIと著作権の論争が激化、法整備の動きも",
+      "summary": "生成AIによるコンテンツ作成が増加する中、学習データの著作権侵害や生成物の所有権に関する法的な論争が世界中で激化している。各国で規制や法整備に向けた議論が進められており、AI開発者は法的なリスクと倫理的な側面を考慮する必要がある。",
+      "source": "wired.com",
+      "url": "https://www.wired.com/story/ai-copyright-lawsuits-generative-ai-data-licensing/",
+      "date": "2024-04-10",
+      "domain": "www.wired.com"
+    },
+    {
+      "title": "IntelがNVIDIAに対抗するAIチップ「Gaudi 3」を発表",
+      "summary": "Intelが最新のAIアクセラレーター「Gaudi 3」を発表し、NVIDIAのH100に対抗する性能とコスト効率を強調した。AIトレーニングと推論の両方で優れたパフォーマンスを目指し、AIハードウェア市場における競争をさらに激化させる。",
+      "source": "intel.com",
+      "url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-vision-2024-news-summary.html",
+      "date": "2024-04-09",
+      "domain": "www.intel.com"
+    },
+    {
+      "title": "CohereがRAGに特化したLLM「Command R+」を発表",
+      "summary": "Cohereは、Retrieval Augmented Generation (RAG) の用途に最適化された大規模言語モデル「Command R+」をリリースした。これにより、企業はより正確で信頼性の高いAIアプリケーションを構築できるようになり、特にエンタープライズ領域でのAI活用を促進する。",
+      "source": "cohere.com",
+      "url": "https://cohere.com/blog/command-r-plus-release",
+      "date": "2024-03-27",
+      "domain": "cohere.com"
+    },
+    {
+      "title": "Figure AI、Microsoftなどから6億7500万ドルの巨額資金調達",
+      "summary": "ヒューマノイドロボット開発のFigure AIが、Microsoft、NVIDIA、Amazonなどから6億7500万ドルの資金を調達した。これは、汎用AIとロボティクス技術の融合に対する期待の表れであり、自律型ロボットの実用化に向けた大きな一歩となる。",
+      "source": "venturebeat.com",
+      "url": "https://venturebeat.com/ai/figure-ai-raises-675m-from-microsoft-nvidia-amazon-and-others/",
+      "date": "2024-02-29",
+      "domain": "venturebeat.com"
+    },
+    {
+      "title": "フランスのAIスタートアップMistral AIが「Mistral Large」をリリース",
+      "summary": "フランスの注目株であるMistral AIが、高性能な大規模言語モデル「Mistral Large」を発表した。このモデルは、欧州発のAI開発を加速させ、オープンソースと商用利用の両面で存在感を高め、グローバルなAIエコシステムに新たな選択肢を提供する。",
+      "source": "mistral.ai",
+      "url": "https://mistral.ai/news/mistral-large/",
+      "date": "2024-02-26",
+      "domain": "mistral.ai"
+    },
+    {
+      "title": "Googleがオープンモデルファミリー「Gemma」を発表",
+      "summary": "Googleは、自社のGeminiモデルファミリーから派生した軽量でオープンなAIモデル「Gemma」をリリースした。これは開発者コミュニティ向けに提供され、オデバイスAIや小規模なアプリケーション開発を促進し、AIの民主化に貢献する。",
+      "source": "blog.google",
+      "url": "https://blog.google/technology/ai/google-gemma-open-models/",
+      "date": "2024-02-21",
+      "domain": "blog.google"
+    },
+    {
+      "title": "OpenAIがテキストから動画を生成する「Sora」を公開",
+      "summary": "OpenAIは、テキストプロンプトからリアルで複雑な動画を生成できる新しいAIモデル「Sora」を発表した。この技術は、映画制作やコンテンツ作成に革命をもたらす可能性を秘めており、生成AIの新たなフロンティアを開拓する。",
+      "source": "openai.com",
+      "url": "https://openai.com/sora",
+      "date": "2024-02-15",
+      "domain": "openai.com"
+    }
+  ],
+  "lastUpdated": "2025-06-15T00:52:34.438Z"
 }
