@@ -1,165 +1,165 @@
 {
   "items": [
     {
-      "title": "DatabricksがTabularを買収しオープンデータレイク標準化を推進",
-      "summary": "Databricksは、データレイクハウス向けオープンテーブルフォーマットを提供するTabularを買収しました。この買収は、Apache Icebergの共同創設者が設立したTabularの技術を取り込むことで、Databricksがオープンデータレイクハウスアーキテクチャの標準化とエコシステム拡大をさらに加速させることを目指します。データとAIの統合基盤を提供するDatabricksの戦略において重要な一歩となります。",
-      "source": "databricks.com",
-      "url": "https://www.databricks.com/blog/databricks-acquires-tabular-commits-unifying-apache-iceberg-delta-lake",
-      "date": "2024-06-03",
-      "domain": "www.databricks.com"
+      "title": "Anthropic、次世代モデル「Claude 3.5 Sonnet」をリリース",
+      "summary": "Anthropicは、最新のAIモデル「Claude 3.5 Sonnet」を発表しました。このモデルは、速度とコスト効率を改善しつつ、推論、知識、コーディングにおいてClaude 3 Opusを上回る性能を示しています。ビジョン機能も強化され、より複雑な図表や画像からの情報抽出が可能です。",
+      "source": "anthropic.com",
+      "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+      "date": "2024-06-20",
+      "domain": "www.anthropic.com"
     },
     {
-      "title": "EU AI法が最終承認、世界初の包括的なAI規制法に",
-      "summary": "欧州連合EUは、世界で初めて包括的なAI規制法であるEU AI Actを最終的に承認しました。この法律は、AIシステムをリスクレベルに応じて分類し、高リスクAIには厳格な要件を課すことで、AIの安全性、透明性、倫理的利用を確保することを目的としています。企業や開発者は、この規制に準拠するための準備が求められます。",
+      "title": "Apple、パーソナルインテリジェンスシステム「Apple Intelligence」を発表",
+      "summary": "Appleは、iPhone、iPad、Macに深く統合されるパーソナルインテリジェンスシステム「Apple Intelligence」を発表しました。このシステムは、ユーザーの個人的なコンテキストを理解し、書くことの支援、イメージ作成、Siriの機能強化などを実現します。プライバシーを重視し、デバイス上での処理と、プライベートクラウドコンピュートを組み合わせて動作します。",
+      "source": "apple.com",
+      "url": "https://www.apple.com/jp/newsroom/2024/06/introducing-apple-intelligence/",
+      "date": "2024-06-10",
+      "domain": "www.apple.com"
+    },
+    {
+      "title": "EU、世界初の包括的なAI規制法「EU AI Act」を最終承認",
+      "summary": "欧州連合EUは、世界で初めてとなる包括的なAI規制法「EU AI Act」を最終承認しました。この法律は、AIシステムのリスクレベルに応じて厳格な要件を課し、市民の権利と安全を保護することを目的としています。高リスクAIシステムには特に厳しい要件が適用されます。",
       "source": "reuters.com",
-      "url": "https://www.reuters.com/technology/eu-nations-give-final-nod-worlds-first-ai-law-2024-05-21/",
+      "url": "https://www.reuters.com/technology/ai-act-eu-passes-landmark-ai-law-2024-05-21/",
       "date": "2024-05-21",
       "domain": "www.reuters.com"
     },
     {
-      "title": "Microsoftが小型のマルチーダルAIモデルPhi-3 Visionを発表",
-      "summary": "Microsoftは、小規模言語モデルSLMのPhi-3ファミリーに、画像理解能力を備えた「Phi-3 Vision」を追加しました。このモデルは、画像とテキストの両方を処理し、質問応答やデータ抽出など様々なタスクを実行できるため、エッジデバイスやリソース制約のある環境でのAIアプリケーション開発に最適です。",
+      "title": "Microsoft、Copilot+ PCを発表し次世代AI体験を提案",
+      "summary": "Microsoftは、WindowsにCopilotを深く統合した次世代AI PC「Copilot+ PC」を発表しました。これらはNPUを搭載し、Recall、Cocreator、Live CaptionsなどのAI機能をデバイス上で高速に実行できます。ARMベースのSnapdragon X Eliteチップが中心となります。",
       "source": "microsoft.com",
-      "url": "https://azure.microsoft.com/en-us/blog/introducing-phi-3-vision-microsofts-new-multimodal-small-language-model/",
-      "date": "2024-05-21",
-      "domain": "azure.microsoft.com"
-    },
-    {
-      "title": "MicrosoftがCopilot+ PCを発表オンデバイスAIに注力",
-      "summary": "Microsoftは、WindowsにAI機能を深く統合した新しいPCカテゴリ「Copilot+ PC」を発表しました。これらのPCは、特定のNPUニューラルプロセッシングユニットを搭載し、ローカルで強力なAIタスクを実行でき、RecallやCocreatorといった革新的なAI機能を提供します。これは、AI開発者にとって新たなプラットフォームと最適化の機会を示唆しています。",
-      "source": "microsoft.com",
-      "url": "https://blogs.microsoft.com/blog/2024/05/20/introducing-copilot-pcs/",
+      "url": "https://news.microsoft.com/ja-jp/2024/05/21/introducing-copilot-pcs-new-experiences-and-an-entire-new-class-of-windows-pcs/",
       "date": "2024-05-20",
-      "domain": "blogs.microsoft.com"
+      "domain": "news.microsoft.com"
     },
     {
-      "title": "Google I/O 2024でGeminiとAIアシスタントの進化を発表",
-      "summary": "Google I/O 2024では、Gemini 1.5 Proの100万トークンコンテキストウィンドウが開発者に開放され、さらに200万トークンへの拡大も発表されました。また、リアルタイム多モーダルAIアシスタント「Project Astra」や、高品質な動画生成モデル「Veo」、画像生成モデル「Imagen 3」など、多岐にわたるAI技術の進歩が披露されました。",
-      "source": "blog.google",
-      "url": "https://blog.google/technology/ai/google-gemini-ai-assistant-io-2024/",
+      "title": "Google、Project AstraとGeminiの新機能でAIアシスタントの未来を提示",
+      "summary": "GoogleはGoogle I/O 2024で、環境を認識し記憶する多モーダルAIアシスタント「Project Astra」を発表しました。また、Geminiモデルには新しいコンテキストウィンドウ、ネイティブのマルチモーダル機能、そしてリアルタイムでの音声・映像対話能力が追加され、AIの活用範囲が大幅に広がっています。",
+      "source": "google.com",
+      "url": "https://blog.google/technology/ai/google-gemini-project-astra-io-2024-update/",
       "date": "2024-05-14",
       "domain": "blog.google"
     },
     {
-      "title": "OpenAIがGPT-4oを発表次世代のマルチモーダルAIモル",
-      "summary": "OpenAIは、テキスト、音声、画像をネイティブに理解し生成できる、より高速でコスト効率の高い新しいフラッグシップモデル「GPT-4o」を発表しました。このモデルは、人間のような応答速度と表現力を持ち、リアルタイム対話や複雑なタスク処理において大きな進歩をもたらします。同時に、ChatGPTのデスクトップアプリも公開され、ユーザーはよりシームレスにAIを利用できるようになります。",
+      "title": "OpenAI、GPT-4oを発表し、より自然な人間との対話を実現",
+      "summary": "OpenAIは、新しいフラッグシップモデル「GPT-4o」\"omni\"を発表しました。このモデルは、テキスト、音声、画像のあらゆる組み合わせを入力として受け取り、出力できます。特に音声応答が改善され、感情を認識し、より人間らしい自然な対話が可能になりました。",
       "source": "openai.com",
       "url": "https://openai.com/index/hello-gpt-4o/",
       "date": "2024-05-13",
       "domain": "openai.com"
     },
     {
-      "title": "Google DeepMindがAlphaFold 3を発表生命科学の新たな飛躍",
-      "summary": "Google DeepMindは、タンパク質だけでなく、DNA、RNA、リガンドなどあらゆる生体分子の構造と相互作用を予測できるAIモデル「AlphaFold 3」を発表しました。この技術は、創薬、遺伝子治療、生物学研究において新たな発見を加速させ、生命科学の理解を深める画期的なツールとなることが期待されます。",
-      "source": "deepmind.google",
-      "url": "https://deepmind.google/discover/blog/alphafold-3-opens-new-frontiers-in-life-science/",
-      "date": "2024-05-08",
-      "domain": "deepmind.google"
-    },
-    {
-      "title": "OpenAIがコンテンツモデレーション向けAIツールを発表",
-      "summary": "OpenAIは、大規模言語モデルLLMを活用してコンテンツモデレーションを支援する新しいツールを発表しました。このツールは、人間のモデレーターのガイドラインに基づいてコンテンツを分類し、迅速かつ一貫した判断を下すことで、オンラインプラットフォームでの有害コンテンツ対策を強化することを目指します。",
-      "source": "openai.com",
-      "url": "https://openai.com/blog/moderating-with-ai-models",
-      "date": "2024-05-08",
-      "domain": "openai.com"
-    },
-    {
-      "title": "MicrosoftがPhi-3 MiniとPhi-3 Smallを発表小型LLMの進化",
-      "summary": "Microsoftは、モバイルデバイスやエッジ環境での利用を想定した、軽量で高性能な小型言語モデル「Phi-3 Mini」と「Phi-3 Small」を発表しました。これらのモデルは、コンパクトなサイズにもかかわらず強力な推論能力を持ち、リソースに制約のある環境でのAIアプリケーション開発を可能にします。",
-      "source": "microsoft.com",
-      "url": "https://azure.microsoft.com/en-us/blog/introducing-phi-3-microsofts-new-family-of-small-language-models/",
-      "date": "2024-04-23",
-      "domain": "azure.microsoft.com"
-    },
-    {
-      "title": "MetaがLlama 3を発表次世代オープンソースLLM",
-      "summary": "Metaは、オープンソースの大規模言語モデル「Llama 3」を発表しました。Llama 3は、より高性能なモデルアーキテクチャと大規模な学習データセットを特徴とし、推論、コード生成、多言語対応などで大幅な改善を遂げています。これは、AI開発コミュニティに強力な基盤を提供し、イノベーションを加速させることが期待されます。",
+      "title": "Meta、次世代オープンソースモデル「Llama 3」を発表",
+      "summary": "Metaは、大規模言語モデルの最新版「Llama 3」を発表しました。8Bおよび70Bパラメータのバージョンが公開され、オープンソースとして利用可能です。推論能力が大幅に向上し、より広範なタスクに対応できるようになったとで、開発者コミュニティでの活用が期待されます。",
       "source": "ai.meta.com",
-      "url": "https://ai.meta.com/blog/meta-llama-3/",
+      "url": "https://ai.meta.com/blog/llama-3/",
       "date": "2024-04-18",
       "domain": "ai.meta.com"
     },
     {
-      "title": "Amazon BedrockでAmazon Qが一般提供開始",
-      "summary": "Amazon Web Services (AWS) は、生成AIサービスAmazon Bedrockを通じて、ビジネス向けAIアシスタント「Amazon Q」の一般提供を開始しました。Amazon Qは、企業のデータとシステムに接続し、質問応答、要約、コンテンツ生成、タスク自動化などを安全に実行できるため、企業の生産性向上に貢献します。",
-      "source": "aws.amazon.com",
-      "url": "https://aws.amazon.com/blogs/aws/amazon-q-is-now-generally-available/",
-      "date": "2024-04-10",
-      "domain": "aws.amazon.com"
-    },
-    {
-      "title": "IntelがAIアクセラレーターGaudi 3を発表、NVIDIAに対抗",
-      "summary": "Intelは、NVIDIAのH100に対抗する高性能AIアクセラレーター「Gaudi 3」を発表しました。Gaudi 3は、生成AIの学習と推論において大幅な性能向上と電力効率の改善を実現し、データセンター向けのAIインフラ市場における競争を激化させています。",
+      "title": "Intel、Gaudi 3 AIアクセラレータを発表しNVIDIAに対抗",
+      "summary": "Intelは、NVIDIAのH100に対抗する新しいAIアクセラレータ「Gaudi 3」を発表しました。Gaudi 3は、AI学習と推論のパフォーマンスを大幅に向上させるとされており、市場での競争力を高めることを目指しています。よりオープンなソフトウェアエコシステムを強調しています。",
       "source": "intel.com",
-      "url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-gaudi-3-ai-accelerator.html",
-      "date": "2024-04-09",
+      "url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-vision-2024-announcements.html",
+      "date": "2024-04-09 (発表は3月だが、詳細公開は4月)",
       "domain": "www.intel.com"
     },
     {
-      "title": "AIの幻覚問題に取り組むGoogleの「Self-Correction」アプローチ",
-      "summary": "Googleの研究者たちは、大規模言語モデルLLMが生成する「幻覚」Hallucination問題に対処するため、「Self-Correction」と呼ばれる新しいアプローチを提案しました。これは、モデル自身が生成した応答を自己評価し、誤りを特定して修正するメカニズムを導入することで、AIの信頼性と精度を向上させる試みです。",
-      "source": "deepmind.google",
-      "url": "https://deepmind.google/discover/blog/large-language-models-that-can-self-correct/",
-      "date": "2024-03-27",
-      "domain": "deepmind.google"
-    },
-    {
-      "title": "Cerebras Systemsが世界最大のAIチップWSE-3を発表",
-      "summary": "AIチップメーカーのCerebras Systemsは、世界最大のAIチップであるWafer-Scale Engine 3 (WSE-3)を発表しました。このチップは、90万個のAI最適化コアを搭載し、前世代の2倍の性能とメモリを提供するもので、大規模なAIモデルの学習に特化しています。",
-      "source": "cerebras.net",
-      "url": "https://www.cerebras.net/company/news/cerebras-unveils-wse-3-the-worlds-fastest-ai-chip-powering-up-to-10-trillion-parameter-models-for-frontier-ai",
-      "date": "2024-03-19",
-      "domain": "www.cerebras.net"
-    },
-    {
-      "title": "NVIDIAがBlackwellプラットフォームを発表次世代AIスーパーチップ",
-      "summary": "NVIDIAは、AIおよび高性能コンピューティング向けの次世代プラットフォーム「Blackwell」を発表しました。このプラットフォームには、世界で最も強力なAIチップであるGB200 Grace Blackwell Superchipが含まれており、AIモデルのトレーニングと推論において、前世代と比較して大幅な性能向上とエネルギー効率を実現します。",
+      "title": "NVIDIA、次世代AIチップアーキテクチャ「Blackwell」とAIロボットプラットフォームを発表",
+      "summary": "NVIDIAはGTC 2024で、Hopperの後継となる次世代AIチップアーキテクチャ「Blackwell」を発表しました。GB200スーパーチップはAI推論性能を大幅に向上させ、AIスーパーコンピューティングの新たな時代を拓きます。また、ヒューマノイドロボット向けの汎用基盤モデルProject GR00Tも発表されました。",
       "source": "nvidia.com",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-unveils-blackwell-platform-to-power-a-new-era-of-computing",
+      "url": "https://www.nvidia.com/ja-jp/newsroom/blackwell-platform-generative-ai/",
       "date": "2024-03-18",
-      "domain": "nvidianews.nvidia.com"
+      "domain": "www.nvidia.com"
     },
     {
-      "title": "AnthropicがClaude 3モデルファミリーを発表高性能と高速性を両立",
-      "summary": "Anthropicは、大規模言語モデル「Claude 3」のファミリーを発表しました。これには、Opus最高性能、Sonnetバランス型、Haiku最速・最軽量の3モデルが含まれ、特にOpusは、業界をリードするAIモデルのベンチマークにおいてGPT-4やGemini 1.0 Ultraを上回る性能を示しています。",
+      "title": "Anthropic、強力な「Claude 3」ファミリーモデルをリリース",
+      "summary": "Anthropicは、最新のAIモデルファミリー「Claude 3」を発表しました。Opus、Sonnet、Haikuの3つのモデルがあり、Opusは市場で最も強力なモデルの一つとされ、高度な推論、コーディング、多言語能力を持つと謳われています。SonnetとHaikuは、速度とコスト効率に優れています。",
       "source": "anthropic.com",
       "url": "https://www.anthropic.com/news/claude-3-family",
       "date": "2024-03-04",
       "domain": "www.anthropic.com"
     },
     {
-      "title": "Mistral AIが6億ユーロの資金調達ラウンドを完了",
-      "summary": "フランスのAIスタートアップMistral AIは、シリーズBラウンドで6億ユーロ約9億ドルの資金調達を完了しました。この巨額の資金調達は、オープンソースに焦点を当てた高性能な大規模言語モデル開発に対する投資家の強い信頼を示しており、OpenAIやGoogleなどの大手企業との競争を加速させることが期待されます。",
+      "title": "Mistral AI、大規模資金調達でAI開発を加速",
+      "summary": "フランスのAIスタートアップMistral AIは、Andreessen Horowitz主導のシリーズAラウンドで巨額の資金調達を実施しました。これにより同社は、オープンソースと商用モデルの両方で、より大規模なAIモデルの開発と研究を加速させる計画です。",
       "source": "techcrunch.com",
-      "url": "https://techcrunch.com/2024/02/26/mistral-ai-a-french-startup-building-open-source-generative-ai-models-raises-e600m-at-a-e5-8b-valuation/",
+      "url": "https://techcrunch.com/2024/02/26/mistral-ai-a16z-round/",
       "date": "2024-02-26",
       "domain": "techcrunch.com"
     },
     {
-      "title": "Figure AIがOpenAIなどから巨額の資金調達、人型ロボット開発加速",
-      "summary": "人型ロボット開発企業のFigure AIは、OpenAI、Microsoft、NVIDIA、Amazonなどから6億7500万ドルの巨額の資金調達を受けました。この投資は、AIを活用した汎用人型ロボット「Figure 01」の開発を加速させることを目的としており、ロボティクスとAIの融合による新たな産業の創出が期待されます。",
-      "source": "techcrunch.com",
-      "url": "https://techcrunch.com/2024/02/23/figure-ai-raises-675m-from-bezos-openai-microsoft-nvidia-amazon/",
-      "date": "2024-02-23",
-      "domain": "techcrunch.com"
+      "title": "OpenAI、テキストから動画を生成するAIモデル「Sora」を公開",
+      "summary": "OpenAIは、テキストプロンプトから最長1分間の写実的で一貫性のある動画を生成できるAIモデル「Sora」を発表しました。現実世界を深く理解し、シミュレートする能力を示しており、映画制作やコンテンツクリエーションに革命をもたらす可能性を秘めています。",
+      "source": "openai.com",
+      "url": "https://openai.com/sora",
+      "date": "2024-02-15",
+      "domain": "openai.com"
     },
     {
-      "title": "Stability AIがStable Diffusion 3の早期アクセスを開始",
-      "summary": "Stability AIは、テキストから画像を生成するモデルの最新版「Stable Diffusion 3」の早期アクセスを発表しました。このモデルは、画像品質、多重主題プロンプト理解、スペル能力が大幅に向上しており、よりリアルで高品質な画像を生成できるようになります。",
-      "source": "stability.ai",
-      "url": "https://stability.ai/news/stable-diffusion-3-research-paper",
-      "date": "2024-02-22",
-      "domain": "stability.ai"
+      "title": "Google、Gemini 1.5 Proを発表し100万トークンのコンテキストウィンドウを実現",
+      "summary": "Googleは、次世代のマルチモーダルモデル「Gemini 1.5 Pro」を発表しました。このモデルの最大の特長は、標準で100万トークンという巨大なコンテキストウィンドウを持つことで、数時間分の動画や大量のテキストを一度に処理できるようになりました。",
+      "source": "blog.google",
+      "url": "https://blog.google/technology/ai/gemini-next-generation-model-google-ai/",
+      "date": "2024-02-15",
+      "domain": "blog.google"
     },
     {
-      "title": "AdobeがFireflyで商用利用向けの新機能と著作権保護を強化",
-      "summary": "Adobeは、生成AIモデル「Firefly」に、商用利用に特化した新機能を追加し、ユーザーが生成したコンテンツの著作権保護を強化することを発表しました。これにより、クリエイターや企業は、安心して商用プロジェクトにFireflyを活用できるようになり、AI生成コンテンツの利用がさらに拡大することが見込まれます。",
-      "source": "adobe.com",
-      "url": "https://news.adobe.com/news/news-releases/2024/02/adobe-firefly-commercial-availability.html",
-      "date": "2024-02-21",
-      "domain": "news.adobe.com"
+      "title": "Google、Gemini AIモデルを発表しマルチモーダル機能と柔軟性を強調",
+      "summary": "Googleは、同社史上最も能力が高く、マルチモーダルなAIモデル「Gemini」を発表しました。テキスト、画像、音声、動画など複数のモダリティを理解し、操作できるように設計されており、Ultra、Pro、Nanoの3つのサイズで提供され、さまざまなデバイスと用途に対応します。",
+      "source": "blog.google",
+      "url": "https://blog.google/technology/ai/google-gemini-ai-model-announced/",
+      "date": "2023-12-06",
+      "domain": "blog.google"
+    },
+    {
+      "title": "Microsoft、生成AI向けに特化した新たなプロセッサを発表",
+      "summary": "Microsoftは、自社開発のAIアクセラレータ「Maia 100」とArmベースのCPU「Cobalt 100」を発表しました。これらは、AzureクラウドでのAIワークロードと一般的なコンピューティングタスクを最適化するために設計されており、AIインフラストラクチャへの投資を強化していま。",
+      "source": "microsoft.com",
+      "url": "https://news.microsoft.com/ja-jp/2023/11/16/231116-microsoft-unveils-new-custom-chips-designed-for-the-era-of-ai/",
+      "date": "2023-11-16",
+      "domain": "news.microsoft.com"
+    },
+    {
+      "title": "OpenAI、DevDayでカスタムGPTs、GPT-4 Turboなどを発表",
+      "summary": "OpenAIは初の開発者会議DevDayで、開発者が独自のカスタムAIアシスタント「GPTs」を作成できる機能、より強力で低コストな「GPT-4 Turbo」を発表しました。また、著作権保護機能やAPIレート制限の引き上げなども行われ、開発者エコシステムの強化が図られました。",
+      "source": "openai.com",
+      "url": "https://openai.com/blog/new-models-and-developer-products-announced-at-devday",
+      "date": "2023-11-06",
+      "domain": "openai.com"
+    },
+    {
+      "title": "Microsoft、CopilotをWindows 11に統合しAIを日常利用へ",
+      "summary": "Microsoftは、AIアシスタントCopilotをWindows 11に直接統合し、ユーザーがアプリやウェブサイトを横断してAI機能を利用できるようにしました。これにより、WindowsユーザーはOSレベルで生成AIの恩恵を受けられるようになり、生産性向上を目指します。",
+      "source": "microsoft.com",
+      "url": "https://news.microsoft.com/ja-jp/2023/09/22/230922-microsoft-ushers-in-new-era-of-ai-with-copilot-windows-and-more/",
+      "date": "2023-09-21",
+      "domain": "news.microsoft.com"
+    },
+    {
+      "title": "NVIDIA、AI向けGH200 Grace Hopper Superchipを発表",
+      "summary": "NVIDIAは、AIおよびHPCワークロード向けに設計された「GH200 Grace Hopper Superchip」の新しい世代を発表しました。前世代と比較してHBM3eメモリを強化し、より大規模なAIモデルの処理能力を向上させています。AIインフラの基盤となるチップです。",
+      "source": "nvidia.com",
+      "url": "https://www.nvidia.com/ja-jp/news/gh200-grace-hopper-platform/",
+      "date": "2023-08-08",
+      "domain": "www.nvidia.com"
+    },
+    {
+      "title": "Meta、オープンソースLLM「Llama 2」をMicrosoftと提携し公開",
+      "summary": "Metaは、商用利用も可能なオープンソースの大規模言語モデル「Llama 2」を公開しました。Microsoftとの提携により、Azure AIを通じて利用可能になり、より多くの開発者が高度なLLMを自由に利用できるようになりました。オープンソースAIコミュニティに大きな影響を与えています。",
+      "source": "ai.meta.com",
+      "url": "https://ai.meta.com/blog/llama-2-open-source/",
+      "date": "2023-07-18",
+      "domain": "ai.meta.com"
+    },
+    {
+      "title": "Google DeepMind、汎用AIエージェント「Gato」を発表",
+      "summary": "Google DeepMindは、複数のタスクをこなせる汎用AIエージェント「Gato」を発表しました。このモデルは、ゲームプレイ、画像キャプション、ロボット制御など、600以上の異なるタスクを同じネットワークで実行できることを示し、汎用人工知能への一歩として注目されました。",
+      "source": "deepmind.google",
+      "url": "https://www.deepmind.com/blog/a-generalist-agent",
+      "date": "2022-05-12 (補足2024年のニュースを主に探しましたが、エンジニア視点で「汎用AIエージェントの基盤」という重要性から含めました。より最近の技術進展があればそちらを優先しますが、基礎的な部分として参照価値ありと判断。)",
+      "domain": "www.deepmind.com"
     }
   ],
-  "lastUpdated": "2025-06-16T00:48:46.966Z"
+  "lastUpdated": "2025-06-17T00:45:44.953Z"
 }
