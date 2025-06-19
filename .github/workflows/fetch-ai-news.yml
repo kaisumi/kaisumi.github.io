@@ -1,8 +1,8 @@
 name: Fetch AI News
 
 on:
-  schedule:
-    - cron: '0 0 * * *'  # 毎日UTC 0:00（日本時間9:00）に実行
+  # schedule:
+  #   - cron: '0 0 * * *'  # 毎日UTC 0:00（日本時間9:00）に実行
   workflow_dispatch:  # 手動実行も可能
 
 # リポジトリコンテンツへの書き込み権限を明示的に付与
